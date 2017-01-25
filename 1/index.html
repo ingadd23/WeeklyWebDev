@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Weekly WebDev 1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="zadanie 1 weekly webdev">
+	<meta name="keywords" content="">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+	
+</head>
+<body>
+	
+<header>
+	<img src="img/logo.png" class="center-block img-responsive" alt="masteralb_logo">
+</header>
+
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+			<h1>Register Form</h1>
+				<div class="black_border">
+					<form>
+						<div class="form-group input_border">
+							<div class="input-group">
+								<div class="input-group-addon "><img src="img/username.png" alt="" ></div>
+								<input type="text" class="form-control text_field" name="username" id="username" placeholder="Username" required="required">
+							</div>
+						</div>
+						
+						<div class="form-group input_border">
+							<div class="input-group">
+								<div class="input-group-addon"><img src="img/password.png" alt=""></div>
+								<input type="password" class="form-control text_field" name="password" id="password" placeholder="Password" required="required">
+							</div>
+						</div>
+						
+						<div class="form-group input_border">
+							<div class="input-group">
+								<div class="input-group-addon"><img src="img/password.png" alt=""></div>
+								<input type="password" class="form-control text_field" name="password1" id="password1" placeholder="Confirm Password" required="required">
+							</div>
+						</div>
+						
+						<div class="form-group input_border">
+							<div class="input-group">
+								<div class="input-group-addon"><img src="img/email.png" alt=""></div>
+								<input type="email" class="form-control text_field" name="email" id="email" placeholder="Email" required="required">
+							</div>
+						</div>
+						
+						<div class="form-group input_border">
+							<div class="input-group">
+								<div class="input-group-addon"><img src="img/location.png" alt=""></div>
+								<select class="form-control text_field" name="location" id="location" required="required">
+									<option  value="">Your location</option>
+									<option value="l1">Location 1</option>
+									<option value="l2">Location 2</option>
+									<option value="l3">Location 3</option>
+								</select>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<div class="checkbox">
+								<label class="checkbox_label">
+									<input type="checkbox"><span></span> I have read and accept the terms of use.
+								</label>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<input type="submit" value="Sign up" class="btn btn-block btn_from btn_green">
+						</div>
+					</form>
+				</div>
+				
+			<h1>Send Email</h1>
+				<div class="black_border">
+					<form>
+						<div class="form-group input_border">
+							<div class="input-group">
+								<div class="input-group-addon "><img src="img/username.png" alt="" ></div>
+								<input type="text" class="form-control text_field" name="username" id="username" placeholder="Your Name" required="required">
+							</div>
+						</div>
+						
+						<div class="form-group input_border">
+							<div class="input-group">
+								<div class="input-group-addon"><img src="img/email.png" alt=""></div>
+								<input type="email" class="form-control text_field" name="email" id="email" placeholder="Your Email" required="required">
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<div class="checkbox">
+								<label class="checkbox_label">
+									<input type="checkbox"><span></span> Send a copy to my Email
+								</label>
+							</div>
+						</div>
+						
+						<div class="form-group input_border">	
+							<textarea name="message" id="message" class="form-control text_field"  required="required" rows="9" placeholder="Type your message..."></textarea>
+						</div>
+						
+						<div class="form-group">
+							<input type="submit" value="Send Email" class="btn btn-block btn_from btn_green">
+						</div>
+					</form>
+				</div>
+			</div>
+			
+			<div class="col-md-5 col-md-offset-1">
+			<h1>Sign In Form</h1>
+				<div class="black_border">
+					<form>
+						<div class="form-group input_border">
+							<div class="input-group">
+								<div class="input-group-addon "><img src="img/username.png" alt="" ></div>
+								<input type="text" class="form-control text_field" name="username" id="username" placeholder="Username" required="required">
+							</div>
+						</div>
+						
+						<div class="form-group input_border">
+							<div class="input-group">
+								<div class="input-group-addon"><img src="img/password.png" alt=""></div>
+								<input type="password" class="form-control text_field" name="password" id="password" placeholder="Password" required="required">
+							</div>
+						</div>
+						
+						<div class="form-group pull-left">
+							<div class="checkbox">
+								<label class="checkbox_label">
+									<input type="checkbox"><span></span> Remember me
+								</label>
+							</div>
+						</div>
+
+						<div class="form-group pull-right">
+							<input type="submit" value="Sign in" class="btn btn_from btn_green btn_size_1 ">
+						</div>
+						
+					</form>
+				</div>
+				
+			<h1>Recover Form</h1>
+				<div class="black_border">
+					<form>
+						<div class="form-group input_border">
+							<div class="input-group">
+								<div class="input-group-addon"><img src="img/email.png" alt=""></div>
+								<input type="email" class="form-control text_field" name="email" id="email" placeholder="Enter your Email" required="required">
+							</div>
+						</div>
+						
+						<div class="form-group input_border">
+							<div class="input-group">
+								<div class="input-group-addon"><img src="img/phone.png" alt=""></div>
+								<input type="number" class="form-control text_field" name="phone" id="phone" placeholder="Enter your Phone number" required="required">
+							</div>
+						</div>
+						
+						<div class="form-group pull-left">
+							<input type="submit" value="Send" class="btn btn_from btn_green btn_size_2 ">
+						</div>
+						
+						<div class="form-group pull-right">
+							<input type="submit" disabled="disabled" value="Done" class="btn btn_from btn_green btn_size_2 ">
+						</div>
+					
+					</form>
+				</div>
+				
+			<h1>Subscribe Form</h1>
+				<div class="black_border">
+					<form>
+						<div class="form-group input_border">
+							<div class="input-group">
+								<div class="input-group-addon"><img src="img/email.png" alt=""></div>
+								<input type="email" class="form-control text_field" name="email" id="email" placeholder="Enter your Email" required="required">
+							</div>
+						</div>
+						
+						<div class="form-group pull-left">
+							<input type="submit" value="Subscribe" class="btn btn_from btn_green btn_size_2 ">
+						</div>
+						
+						<div class="form-group pull-right">
+							<input type="reset" value="No, Thanks" class="btn btn_from btn_red btn_size_2 ">
+						</div> 
+					</form>
+				</div>
+				
+				<div class="logo_1">
+					<img src="img/logo_1.png" alt="masteralb_logo_1" class="center-block img-responsive">
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</section>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
