@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Weekly WebDev 2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="zadanie 2 weekly webdev">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
+	<header id="home">
+		<nav class="navbar navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="container">
+					<div class="navbar-header">
+
+						<button type="button" class="btn btn-primary btn-sm visible-xs button-right" 
+								data-toggle="collapse" data-target="#menu">
+							<i class="glyphicon glyphicon-menu-hamburger"></i>
+						</button>
+
+						<a class="navbar-brand" href="#"> <img alt="Brand" src="images/logo.png"> </a>
+					</div>
+
+					<div id="menu" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#home" class="collapse_off">home</a></li>
+							<li><a href="#about" class="collapse_off">about</a></li>
+							<li><a href="#services" class="collapse_off">services</a></li>
+							<li><a href="#gallery" class="collapse_off">gallery</a></li>
+							<li><a href="#blog" class="collapse_off">blog</a></li>
+							<li><a href="#contact" class="collapse_off">contact</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</nav>
+
+		<div class="home">
+			<div class="container">
+				<div class="col-md-4 no_padding">
+					<h1>Fresh Life</h1>
+					<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+					<button class="button">get free now</button>
+				</div>
+				
+				<div class="col-xs-12 ">
+					<img src="images/scroll.png" alt="scroll_img" class="center-block scroll_img">
+				</div>
+			</div>
+		</div>
+	</header>
+	
+<!-- ------------------------ SECTION ABOUT ------------------------ -->
+	
+	<section id="about">
+		<div class="container">
+			<div class="col-md-6 no_padding">
+				<img src="images/img_about.png" alt="img_about" class="center-block img-responsive">
+			</div>
+				
+			<div class="col-md-5 col-md-offset-1 no_padding">
+				<h1> About Us</h1>
+				<p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+				<p>
+				Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+			</div>
+		</div>
+	</section>
+	
+<!-- ------------------------ SECTION SERVICES ------------------------ -->
+	
+	<section id="services">
+		<div class="container">
+			<div class="col-md-4 col-md-offset-1 no_padding">
+				<div class="services_button">
+					<p class="pull-left">Online Shopping</p>
+					<img src="images/icon_onlineshopping.png" alt="icon_onlineshopping" class="pull-right">
+				</div>
+				
+				<div class="services_button">
+					<p class="pull-left">Quality Product</p>
+					<img src="images/icon_qualityproduct.png" alt="icon_qualityproduct" class="pull-right">
+				</div>
+				
+				<div class="services_button">
+					<p class="pull-left">Domestic & International Delivery</p>
+					<img src="images/icon_domestic.png" alt="icon_domestic" class="pull-right">
+				</div>
+				
+				<div class="services_button">
+					<p class="pull-left">Well Organized</p>
+					<img src="images/icon_wellorganized.png" alt="icon_wellorganized" class="pull-right">
+				</div>
+			</div>
+			
+			<div class="col-md-5 col-md-offset-2 no_padding">
+				<p>Our Services</p>
+				<img src="images/img_services.png" alt="img_services">
+			</div>
+		</div>
+	</section>
+	
+<!-- ------------------------ SECTION GALLERY ------------------------ -->
+
+	<section id="gallery">
+		<div class="container">
+			<div class="col-md-6 col-md-offset-3 no_padding text-center">
+				<h1>Gallery</h1>
+				<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-8"><img src="images/gallery_1.jpg" alt="gallery_1"></div>
+				
+				<div class="col-md-4">
+					<img src="images/gallery_2.jpg" alt="gallery_2">
+					<img src="images/gallery_3.jpg" alt="gallery_3">
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-6"><img src="images/gallery_4.jpg" alt="gallery_4"></div>	
+				<div class="col-md-6"><img src="images/gallery_5.jpg" alt="gallery_5"></div>
+			</div>
+			
+			<button class="button center-block"> view more </button>
+		</div>
+	</section>
+	
+<!-- ------------------------ SECTION GALLERY ------------------------ -->
+
+	<section id="subscribe">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 text-left">
+					<h1>Subscribe To Us</h1>
+					<p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+			</div>
+			
+			<form class="row">
+				<div class="col-md-6">
+					<input type="email" id="email" name="email" placeholder="Your email address..." required="required">
+				</div>
+				<div class="col-md-2">
+					<button class="button">subscribe</button>
+				</div>
+			</form>
+		</div>
+	</section>
+	
+<!-- ------------------------ SECTION BLOG ------------------------ -->
+
+	<section id="blog">
+		<div class="container">
+			<div class="col-md-6 col-md-offset-3 no_padding text-center">
+				<h1>Blog</h1>
+				<p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-4">	
+					<div class="date"><p>20</p> <p> nov</p></div>
+					<div class="blog_footer">
+						<p>Green Smoothies: Too Much of a Good Thing?</p>
+						<p>By Auskteez - 2 hours ago</p>
+					</div>
+				</div>
+				
+				<div class="col-md-4">	
+					<div class="date"><p>14</p> <p> nov</p></div>
+					<div class="blog_footer">
+						<p>Growing Food and a “Thirst” for Innovation</p>
+						<p>By Auskteez - 3 hours ago</p>
+					</div>
+				</div>
+				
+				<div class="col-md-4">	
+					<div class="date"><p>10</p> <p> nov</p></div>
+					<div class="blog_footer">
+						<p>Pesticides & Food: What You Need to Know</p>
+						<p>By Auskteez - 6 hours ago</p>
+					</div>
+				</div>
+			</div>
+			<button class="button center-block">view more</button>
+		</div>
+	</section>
+	
+<!-- ------------------------ SECTION CONTACT ------------------------ -->
+
+	<section id="contact">
+		<div class="container">
+			<div class="col-md-4 col-md-offset-4 text-center">
+				<h1>Contact</h1>
+				<p>For new projects, ideas, business or anything
+				you'd like to discuss, contact with me!</p>
+			</div>
+			
+			<div class="row">
+				<form class="col-md-5">
+					<input type="text" id="name" name="name" placeholder="Your name..." required="required"/>
+					<input type="email" id="email_1" name="email_1" placeholder="Your email..." required="required">
+					<input type="text" id="phone" name="phone" placeholder="Your phone number..." required="required">
+					<textarea id="message" name="message" placeholder="Your message..." required="required" rows="9"></textarea>
+					<button class="button center-block">send message</button>
+				</form>
+				
+				<div class="col-md-3 col-md-offset-2 no_padding">
+					<h2>addres</h2>
+					<h3>123 City name, Street, City, Country</h3>
+					
+					<h2>email</h2>
+					<h3>cahee@domain.com</h3>
+					
+					<h2>phone</h2>
+					<h3>+012 345 6789</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+<!-- ------------------------ FOOTER ------------------------ -->
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 pull-left "><p>© 2015 Company. All right reserved.</p></div>
+				<div class="col-md-7"> <img src="images/logo_2.png" alt="logo" class="center-block"></div>
+				<div class="col-md-2 pull-right"><p>Made with <span>love</span> by Auskteez</p></div>
+			</div>
+		</div>
+	</footer>
+
+	
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/javascript.js"></script>
+   
+</body>
+</html>
