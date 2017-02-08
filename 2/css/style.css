@@ -29,6 +29,7 @@
 	padding: 0;
 }
 
+/* ------------------------ SECTION HOME ------------------------ */
 
 #home {
 	background-image: url('../images/bg_header.jpg');
@@ -80,7 +81,7 @@ nav .navbar-brand {
     background-color: #ff6033;
 }
 
- #menu > ul> li > a:hover {
+ #menu > ul> li > a:hover,  #menu > ul> li > a:focus {
     background-color: transparent;
 }
 
@@ -181,18 +182,7 @@ nav .navbar-brand {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* ------------------------ SECTION ABOUT ------------------------ */
 
 #about {
 	height: 700px;
@@ -225,10 +215,7 @@ nav .navbar-brand {
 	min-width: 111%;
 }
 
-
-
-
-
+/* ------------------------ SECTION SERVICES ------------------------ */
 
 #services .services_button {
 	width: 400px;
@@ -300,23 +287,13 @@ nav .navbar-brand {
 	margin-left: 25px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* ------------------------ SECTION GALLERY ------------------------ */
 
 
 #gallery {
 	background-color: #ffe92f;
-	height: 1536px;
+	height: auto;
+	padding-bottom: 100px;
 }
 
 #gallery h1 {
@@ -342,7 +319,7 @@ nav .navbar-brand {
 	box-shadow: 0 4px 10px rgba(0,0,0,.5);
 }
 
-#gallery > div > div:nth-child(2) > div:nth-child(2) > img:last-child  {
+#gallery > div > div:nth-child(2) > div:nth-child(2) > a:last-child > img {
 	margin-top: 30px;
 }
 
@@ -354,40 +331,20 @@ nav .navbar-brand {
 	background-color: #5585a2;
 	width: 200px;
 	margin-top: 50px;
-	
 }
 
+#gallery .more {
+	margin-top: 30px;
+	display: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ------------------------ SECTION SUBSCRIBE ------------------------ */
 
 #subscribe {
-	background-image: url('../images/bg_subscribe.jpg');
+	background-image: url('../images/bg_subscribe_1.jpg');
 	background-repeat: no-repeat;
 	background-attachment: scroll;
-	background-position: center top;
+	background-position: center right 18%;
 	height: auto;
 	padding-bottom: 120px;
 }
@@ -427,36 +384,12 @@ nav .navbar-brand {
 	width: 170px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ------------------------ SECTION BLOG ------------------------ */
 
 #blog {
 	background-color: #b07cf7;
-	height: 854px;
+	height: auto;
+	padding-bottom: 100px;
 	}
 
 #blog h1 {	
@@ -475,7 +408,36 @@ nav .navbar-brand {
 	margin-top: 60px;
 }
 
+#blog div > .row > a > div{
+	height: 310px;
+	width: 370px;
+	padding: 15px;
+	margin: 40px 15px 0px 15px;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 2px 5px rgba(0,0,0,.5);
+	box-shadow: 0 2px 5px rgba(0,0,0,.5);
+	background-position: center;
+	background-size: 100%;
+    transition: all .5s ease-in-out;
+	
+}
 
+#blog div > .row > a > div:hover {
+    background-size: 110%;
+	background-position: center;
+}
+
+#blog div > .row > a > div:hover::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #000;
+	opacity: .4;
+	height: 100%;
+	transition: all .9s ease-in-out;
+}
 
 .date {
 	width: 60px;
@@ -486,6 +448,8 @@ nav .navbar-brand {
 	margin: 15px;
 	color: #fff;
 	text-transform: uppercase;
+	position: relative;
+	z-index: 100;
 }
 
 .date > p:first-child {
@@ -502,30 +466,19 @@ nav .navbar-brand {
 }
 
 
-
-#blog div > .row > div{
-	height: 310px;
-	width: 370px;
-	padding: 15px;
-	margin: 40px 15px 0px 15px;
-	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,.5);
-	-moz-box-shadow: 0 2px 5px rgba(0,0,0,.5);
-	box-shadow: 0 2px 5px rgba(0,0,0,.5);
-}
-
-#blog div > .row > div:first-child{
+#blog div > .row > a:first-child > div{
 	background-image: url('../images/blog_1.jpg');
 }
 
-#blog div > .row > div:nth-child(2){
+#blog div > .row > a:nth-child(2) > div{
 	background-image: url('../images/blog_2.jpg');
 }
 
-#blog div > .row > div:nth-child(3){
+#blog div > .row > a:nth-child(3) > div{
 	background-image: url('../images/blog_3.jpg');
 }
 
-#blog div > .row > div::before {
+#blog div > .row > a > div::before {
 	content: '';
 	position: absolute;
 	right: 0;
@@ -536,8 +489,7 @@ nav .navbar-brand {
 	background-image: -o-linear-gradient(bottom, rgba(0,0,0,.9), rgba(255,255,255,.0));
 	background-image: -ms-linear-gradient(bottom, rgba(0,0,0,.9), rgba(255,255,255,.0));
 	background-image: linear-gradient(to top, rgba(0,0,0,.9), rgba(255,255,255,.0));
-	height: 151px;
-	
+	height: 151px;	
 }
 
 .blog_footer > p:first-child {
@@ -546,7 +498,9 @@ nav .navbar-brand {
 	color: #fff;
 	margin-top: 110px;
 	position: relative;
+	z-index: 100;
 }
+
 
 .blog_footer > p:last-child {
 	font-family: 'raleway-light';
@@ -554,39 +508,21 @@ nav .navbar-brand {
 	color: #fff;
 	margin-top: 15px;
 	position: relative;
+	z-index: 100;
 }
 
 #blog button {
 	width: 200px;
 	background-color: #f72b3b;
 	margin-top: 50px;
+	
 }
 
+#blog .more_blog {
+	display: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ------------------------ SECTION CONTACT ------------------------ */
 
 #contact {
 	background-image: url('../images/bg_footer.jpg');
@@ -633,20 +569,11 @@ nav .navbar-brand {
 	opacity: 1;
 	font-family: 'raleway-bold';
 	color: #fff;
-	
+	border-left: 5px solid #355b82;
+	outline: 0;
+	padding-left: 14px;
 }
 
-/* #contact form input:before{	
-	content: '';
-	position: absolute;
-	display: block;
-	top: 0;
-	left: 0;
-	height: 50px;
-	width: 3px;
-	background: red;
-	
-} */
 
 #contact form textarea {
 	height: 250px;
@@ -655,38 +582,21 @@ nav .navbar-brand {
 	resize: none;
 }
 
-#contact form input::-webkit-input-placeholder, #contact form textarea::-webkit-input-placeholder{
-	color: #fff;
-}
+#contact form input::-webkit-input-placeholder, #contact form textarea::-webkit-input-placeholder{color: #fff;}
 
-#contact form input:-moz-placeholder, #contact form textarea:-moz-placeholder{
-	color: #fff;
-}
+#contact form input:-moz-placeholder, #contact form textarea:-moz-placeholder{color: #fff;}
 
-#contact form input::-moz-placeholder, #contact form textarea::-moz-placeholder{
-	color: #fff;
-}
+#contact form input::-moz-placeholder, #contact form textarea::-moz-placeholder{color: #fff;}
 
-#contact form input:-ms-input-placeholder, #contact form textarea:-ms-input-placeholder{
-	color: #fff;
-}
+#contact form input:-ms-input-placeholder, #contact form textarea:-ms-input-placeholder{color: #fff;}
 
 #contact button {
 	width: 500px;
 	background-color: #00c4c4;
 }
 
-
-
-
-
-
-
-
-
 #contact > div > .row > div {
 	margin-top: -37px;
-	
 	width: 330px;
 }
 
@@ -708,15 +618,43 @@ nav .navbar-brand {
 
 }
 
+/* ------------------------ FOOTER ------------------------ */
+
+footer {
+	background-color: #262626;
+	height: 90px;
+}
+
+footer > div > .row > div:first-child > p {
+	font-family: 'raleway-light';
+	font-size: 16px;
+	color: #b9b9b9;
+	padding-top: 38px;
+}
+
+footer > div > .row > div:nth-child(2) > img {
+	padding-top: 30px;
+}
+
+footer > div > .row > div:last-child > p {
+	font-family: 'raleway-bold';
+	font-size: 15px;
+	color: #b9b9b9;
+	padding-top: 38px;
+	float: right;
+}
+
+footer > div > .row > div:last-child > p > span{
+	color: #ff2b58;
+}
 
 
 
-
+/* ------------------------------- MAX-WIDTH 316px --------------------------------- */
 
 @media (max-width: 316px)  {
 	
 	#services .services_button > p {
-	
 		min-width: 220px !important;
 		width: auto !important;
 	}
@@ -727,19 +665,20 @@ nav .navbar-brand {
 
 }
 
-
-
+/* ------------------------------- MAX-WIDTH 768px --------------------------------- */
 
 @media (max-width: 767px)  {
+	
+	/* ------------------------ SECTION HOME ------------------------ */
 	
 	#home {
 		background-image: url('../images/bg_header.jpg');
 		background-color: #f9f8fb;
 		background-repeat: no-repeat;
 		background-attachment: scroll;
-		background-position: center top;
+		background-position: center top 10%;
 		height: auto;
-		padding-bottom: 150px;
+		padding-bottom: 100px;
 	}
 	
 	.navbar {
@@ -752,7 +691,6 @@ nav .navbar-brand {
 		padding-top:8px;
 	}
 
-	
 	nav .navbar-brand img {
 		width: 90px;
 	}
@@ -798,7 +736,7 @@ nav .navbar-brand {
 	
 	#home h1 {
 		font-size: 50px;
-		padding-top: 200px;
+		padding-top: 150px;
 		text-align: center;
 	}
 
@@ -813,22 +751,37 @@ nav .navbar-brand {
 		display: block;
 	}
 	
+	/* ------------------------ SECTION ABOUT ------------------------ */
+	
 	#about {
 		height: auto;
-		padding-bottom: 100px;
+		padding-bottom: 50px;
 	}
 
 	#about h1 {	
 		font-size: 50px;
-		margin-top: 100px;
+		margin-top: 30px;
 		text-align: center;
 	}
 
 	#about p {
-		font-size: 16px;
-		text-align: justify;
+		font-size: 15px;
+		text-align: center;
 	}
 	
+	#about img {
+		padding-top: 30px;
+		margin-left: -40px;
+		max-width: 60%;
+	}
+
+	#about .img-responsive {
+		min-width: 70%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+	/* ------------------------ SECTION SERVICES ------------------------ */
 	
 	#services .services_button {
 		max-width: 400px;
@@ -840,7 +793,6 @@ nav .navbar-brand {
 	}
 
 	#services .services_button > p {
-	
 		font-size: 16px;
 		padding-top: 30px;
 		padding-left: 15px;
@@ -872,24 +824,37 @@ nav .navbar-brand {
 
 	#services h2 {
 		font-family: 'raleway-bold';
-		font-size: 50px;
+		font-size: 40px;
 		color: #fff;
-		margin-top: 80px;
+		text-shadow: 1px 1px 5px #6a6a6a;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
 	}
 	
+	#services > div > div > img {
+		margin-top: 10%;
+		width: 50%;
+		min-width: 60%;
+	}
+
+	/* ------------------------ SECTION GALLERY ------------------------ */
 	
 	#gallery {
 		height: auto;
-		padding-bottom: 80px;
+		padding-bottom: 50px;
 	}
 
 	#gallery h1 {
-		font-size: 70px;
-		margin-top: 100px;
+		font-size: 50px;
+		margin-top: 70px;
 	}
 
 	#gallery p {
-		text-align: justify;
+		text-align: center;
+		font-size: 15px;
+		margin-top: 50px;
 	}
 
 	#gallery img  {
@@ -901,9 +866,283 @@ nav .navbar-brand {
 		margin-top: 0px;
 	}
 	
+	#gallery .button {
+		margin-top: 20px;
+	}
+	
+	#gallery .more {
+		margin-top: 0px;
+	}
+	
+	/* ------------------------ SECTION SUBSCRIBE ------------------------ */
+	
 	#subscribe {
 		height: auto;
+		padding-bottom: 210px;
+		background-size: contain;
+		background-position: center bottom;
+	}
+
+	#subscribe h1 {
+		font-size: 40px;
+		line-height: 37px;
+		margin-top: 80px;
+		text-align: center;
+	}
+
+	#subscribe p {
+		text-align: center;
+		background: #fff;
+		padding: 5px;
+		font-size: 15px;
+	}
+
+	#subscribe form {
+		margin-top: 20px;
+	}
+
+	#subscribe button {
+		margin-top: 20px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	/* ------------------------ SECTION BLOG ------------------------ */
+	
+	#blog {
+		height: auto;
+		padding-bottom: 50px;
+	}
+	
+	#blog h1 {
+		font-size: 50px;
+		margin-top: 50px;
+	}
+	
+	#blog > div > div > p {
+		font-size: 15px;
+		margin-top: 50px;
+	}
+
+	#blog div > .row > a > div {
+		width: 100%;
+		background-size: cover;
+		margin: 20px auto ;
+		float: none;
+		text-decoration: none;	
+	}
+	
+	#blog div > .row > a > div:hover {
+		background-size: cover;
+	}
+	
+	#blog div > .row > a  {
+		text-decoration: none;	
+	}
+	
+	#blog p {
+		text-decoration: none;
+		text-align: center;
+	}
+	
+	#blog .row {
+		padding: 15px;
+	}
+	
+	.blog_footer > p:first-child {
+		font-size: 18px;
+	}
+	
+	#blog .button {
+		margin-top: 20px;
+	}
+	
+	#blog .more_blog {
+		margin-top: -30px;
+	}
+	
+	#blog > div > div:nth-child(2) {
+		padding-bottom: 0px;
+	}
+	
+	/* ------------------------ SECTION CONTACT ------------------------ */
+	
+	#contact {
+		background-image: url('../images/bg_footer.jpg');
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-position: center top;
+		height: auto;
+		padding-bottom: 50px;
+		background-size: cover;
+	}
+
+	#contact h1{
+		font-size: 50px;
+		margin-top: 50px;
+	}
+
+	#contact p{
+		margin-top: 40px;
+		font-size: 15px;
+	}
+
+	#contact form input, #contact form textarea {
+		width: 100%;	
+		height: 40px;
+	}
+
+	#contact form textarea {
+		height: 150px;
+		padding-top: 20px;
+		font-size: 15px;
+		resize: none;
+	}
+
+	#contact button {
+		width: 100%;
+	}
+
+	#contact > div > .row > div {
+		margin-top: 10px;
+		width: 100%;
+		text-align: center;
+	}
+
+	#contact h2 {
+		color: #fff;	
+	}
+
+	#contact h3 {
+		font-size: 15px;
+		color: #fff;
+	}
+
+	/* ------------------------ FOOTER ------------------------ */
+	
+	footer {
+		height: auto;
+		padding-bottom: 20px;
+	}
+
+	footer > div > .row > div:first-child > p {
+		font-size: 14px;
+		padding-top: 28px;
+		float: none;
+		text-align: center;
+	}
+
+	footer > div > .row > div:nth-child(2) > img {
+		padding-top: 8px;
+	}
+
+	footer > div > .row > div:last-child > p {
+		font-size: 13px;
+		padding-top: 18px;
+		float: none;
+		text-align: center;
+	}
+
+}
+
+/* ------------------------------- MAX-WIDTH 992px --------------------------------- */
+
+@media (min-width: 768px) and (max-width: 991px) {
+	
+	#menu > ul > li > a {
+		margin: 6px 15px 15px 20px;
+		font-size: 14px;
+	}
+	
+	/* ------------------------ SECTION ABOUT ------------------------ */
+	
+	#about {
+		height: 650px;
+	}
+
+	#about h1 {		
+		font-size: 60px;
+		margin-top: 150px;
+	}
+
+	#about img {
+		padding-top: 130px;
+		margin-left: -40px;
+	}
+	
+	/* ------------------------ SECTION SERVICES ------------------------ */
+	
+	#services {
+		height: 580px;
+		background-color: #70bfff;
+	}
+	
+	#services .services_button {
+		width: 350px;
+		height: 80px;
+	}
+
+	#services .services_button > p {
+		font-size: 18px;
+		line-height: 27px;
+		padding-top: 28px;
+		width: 250px;
+		height: 80px;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	#services > div > div > div:nth-child(3) > p {
+		padding-top: 15px;
+	}
+
+	#services .services_button > img {
+		padding-right: 16px;
+		padding-top: 15px;
+	}
+
+	#services .services_button::before {	
+		height: 80px;	
+		right: -25px;
+	}
+
+	
+	#services > div > div:nth-child(2) {
+		margin-top: 100px;
+	}
+
+	#services > div > div:last-child {
+		margin-top: 115px;
+	}
+
+	#services > div > div:last-child > p {
+		font-size: 55px;
+		width: 340px;
+		top: 180px;
+	}
+
+	#services > div > div:last-child > img {
+		margin-left: 0px;
+	}
+	
+	/* ------------------------ SECTION GALLERY ------------------------ */
+	
+	#gallery {
+		height: auto;
 		padding-bottom: 80px;
+	}
+
+	#gallery > div > div:nth-child(2) > div:nth-child(2) > img:last-child  {
+		margin-top: 26px;
+	}
+	
+	/* ------------------------ SECTION SUBSCRIBE ------------------------ */
+	
+	#subscribe {
+		height: auto;
+		padding-bottom: 180px;
+		background-position: center bottom;
 	}
 
 	#subscribe h1 {
@@ -932,201 +1171,31 @@ nav .navbar-brand {
 		margin-right: auto;
 	}
 	
-	#blog {
-		height: auto;
-		padding-bottom: 80px;
-		}
-	
-	#blog h1 {
-		font-size: 60px;
-		margin-top: 100px;
-	}
+	/* ------------------------ SECTION BLOG ------------------------ */
 
-	#blog div > .row > div {
-		max-width: 370px;
-		width: auto;
-		margin: 20px auto;
-	}
-	
-	#blog .row {
-		padding: 15px;
-	}
-	
-	.blog_footer > p:first-child {
-		font-size: 18px;
-	}
-	
-	
-	
-	#contact {
-		background-image: url('../images/bg_footer.jpg');
-		background-repeat: no-repeat;
-		background-attachment: scroll;
-		background-position: center top;
-		height: auto;
-		padding-bottom: 80px;
-		background-size: cover;
-	}
-
-	#contact h1{
-		font-size: 60px;
-	}
-
-	#contact p{
-		
-		margin-top: 50px;
-		
-	}
-
-	#contact form input, #contact form textarea {
-		width: 100%;
-		
-	}
-
-
-
-	#contact form textarea {
-		height: 250px;
-		padding-top: 20px;
-		font-size: 15px;
-		resize: none;
-	}
-
-	
-
-	#contact button {
-		width: 100%;
-	}
-
-	#contact > div > .row > div {
-		margin-top: 10px;
-		width: 100%;
-		text-align: center;
-		
-	}
-
-	#contact h2 {
-		color: #fff;	
-	}
-
-	#contact h3 {
-		font-size: 17px;
-		color: #fff;
-	}
-
-
-
-
-
-
-}
-
-
-@media (min-width: 768px) and (max-width: 991px) {
-	#menu > ul > li > a {
-		margin: 6px 15px 15px 20px;
-		font-size: 14px;
-	}
-	
-	#about {
-		height: 650px;
-	}
-
-	#about h1 {		
-		font-size: 60px;
-		margin-top: 150px;
-	}
-
-	#about img {
-
-		padding-top: 130px;
-		margin-left: -40px;
-	}
-	
-	#services .services_button {
-		width: 350px;
-		height: 80px;
-		
-	}
-
-	#services .services_button > p {
-		
-		font-size: 18px;
-		line-height: 27px;
-
-		padding-top: 28px;
-		width: 250px;
-		height: 80px;
-		vertical-align: middle;
-		text-align: center;
-
-	}
-
-	#services > div > div > div:nth-child(3) > p {
-		padding-top: 15px;
-	}
-
-	#services .services_button > img {
-		padding-right: 16px;
-		padding-top: 15px;
-	}
-
-	#services .services_button::before {	
-		height: 80px;	
-		right: -25px;
-	}
-
-	#services {
-		height: 580px;
-		background-color: #70bfff;
-	}
-
-	#services > div > div:nth-child(2) {
-		margin-top: 100px;
-	}
-
-	#services > div > div:last-child {
-		margin-top: 115px;
-	}
-
-	#services > div > div:last-child > p {
-		font-size: 55px;
-		width: 340px;
-		top: 180px;
-	}
-
-	#services > div > div:last-child > img {
-		margin-left: 0px;
-	}
-	
-	#gallery {
-		height: auto;
-		padding-bottom: 80px;
-	}
-
-	#gallery > div > div:nth-child(2) > div:nth-child(2) > img:last-child  {
-		margin-top: 26px;
-	}
-	
-	
 	#blog {
 		height: auto;
 		padding-bottom: 100px;
-		}
+	}
 	
 	#blog h1 {
 		font-size: 80px;
 	}
 
-	#blog div > .row > div {
+	#blog div > .row > a > div {
 		width: 350px;
 		margin: 40px 10px 0px 10px;
+		background-size: 110%;
 	}
 	
+	#blog div > .row > a > div:hover {
+		background-size: 120%;
+	}
+	
+	/* ------------------------ SECTION CONTACT ------------------------ */
 	
 	#contact h1 {
 		font-size: 80px;
-		
 	}
 
 	#contact form input, #contact form textarea {
@@ -1148,19 +1217,32 @@ nav .navbar-brand {
 		font-size: 17px;
 	}
 
+	/* ------------------------ FOOTER ------------------------ */
+	
+	footer > div > .row > div:first-child > p {
+		font-size: 14px;
+	}
 
+	footer > div > .row > div:last-child > p {
+		font-size: 13px;
+	}
 
 }
 
+/* ------------------------------- MAX-WIDTH 1200px --------------------------------- */
 
 @media (min-width: 992px) and (max-width: 1199px) {
 
+	#about img {
+		padding-top: 90px;
+	}
+	
 	#about h1 {
 		font-size: 80px;
 	}
 	
+	/* ------------------------ SECTION SERVICES ------------------------ */
 	
-
 	#services {
 		height: 700px;
 		background-color: #70bfff;
@@ -1188,6 +1270,8 @@ nav .navbar-brand {
 		margin-left: 15px;
 	}
 	
+	/* ------------------------ SECTION GALLERY ------------------------ */
+	
 	#gallery {
 		height: auto;
 		padding-bottom: 80px;
@@ -1196,14 +1280,16 @@ nav .navbar-brand {
 	#gallery > div > div:nth-child(2) > div:nth-child(2) > img:last-child  {
 		margin-top: 28px;
 	}
-	
-	
 
-	.date {
-		margin: 5px;
+	/* ------------------------ SECTION SUBSCRIBE ------------------------ */
+	
+	#subscribe {
+		background-position: center right;
 	}
+	
+	/* ------------------------ SECTION BLOG ------------------------ */
 
-	#blog div > .row > div{
+	#blog div > .row > a > div{
 		height: 293px;
 		width: 293px;
 		padding: 15px;
@@ -1211,85 +1297,40 @@ nav .navbar-brand {
 		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,.5);
 		-moz-box-shadow: 0 2px 5px rgba(0,0,0,.5);
 		box-shadow: 0 2px 5px rgba(0,0,0,.5);
+		background-size: 120%;
 	}
+	
+	#blog div > .row > a > div:hover{
+		background-size: 130%;
+	}
+	
+	.date {
+		margin: 5px;
+	}
+	
+	/* ------------------------ SECTION CONTACT ------------------------ */
 	
 	#contact h1 {
 		font-size: 80px;
 	}
+	
+	/* ------------------------ FOOTER ------------------------ */
+	
+	footer > div > .row > div:first-child > p {
+		font-size: 14px;
+	}
 
-
+	footer > div > .row > div:last-child > p {
+		font-size: 13px;
+	}
 
 }
 
-
+/* ------------------------------- MIN-WIDTH 1200px --------------------------------- */
 
 @media (min-width: 1200px)  {
 	.container {
 		padding-right: 0px;
 		padding-left: 0px;
 	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-	background-color: #262626;
-	height: 90px;
-}
-
-footer > div > .row > div:first-child > p {
-	font-family: 'raleway-light';
-	font-size: 16px;
-	color: #b9b9b9;
-	padding-top: 38px;
-}
-
-footer > div > .row > div:nth-child(2) > img {
-	padding-top: 30px;
-}
-
-footer > div > .row > div:last-child > p {
-	font-family: 'raleway-bold';
-	font-size: 15px;
-	color: #b9b9b9;
-	padding-top: 38px;
-	float: right;
-	
-}
-
-footer > div > .row > div:last-child > p > span{
-	color: #ff2b58;
-}
-
-@media (min-width: 990px) and (max-width: 1200px) {
-	#about img {
-		padding-top: 90px;
-	}
-}
-
-.trans {
-	
 }
