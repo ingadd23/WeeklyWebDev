@@ -11,7 +11,7 @@ body {
 	background: url('../img/bg.jpg') no-repeat;
 	background-attachment: scroll;
 	background-position: top center;
-    background-size: 100% 100%;
+    background-size:100%;
 	height: 100%;
 	font-family: "titillium";
 	padding: 0px 15px 50px 15px;
@@ -123,6 +123,12 @@ input {
 
 }
 
+form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder{color: #999999;}
+
+form input::-moz-placeholder, form textarea::-moz-placeholder{color: #626262;}
+
+form input:-ms-input-placeholder, form textarea:-ms-input-placeholder{color: #999999;}
+
 select {
 	padding-left: 20px;
 	width: 100%;
@@ -202,6 +208,7 @@ textarea {
 	box-shadow: inset 0px -20px 43px -40px rgba(0,0,0,0.75);
 	margin-bottom: 20px;
 	resize: none;
+	overflow: hidden;
 }
 
 .btn_from {
