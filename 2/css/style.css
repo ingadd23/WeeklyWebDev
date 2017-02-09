@@ -418,11 +418,8 @@ nav .navbar-brand {
 	box-shadow: 0 2px 5px rgba(0,0,0,.5);
 	background-position: center;
 	background-size: 100%;
-    transition: all .5s ease-in-out;
-	-webkit-transition: all .5s ease-in-out;
-	-moz-transition: all .5s ease-in-out;
-	-o-transition: all .5s ease-in-out;
-	
+    transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;	
 }
 
 #blog div > .row > a > div:hover {
@@ -439,10 +436,9 @@ nav .navbar-brand {
 	background-color: #000;
 	opacity: .4;
 	height: 100%;
-	transition: all .9s ease-in-out;
-	-webkit-transition: all .5s ease-in-out;
-	-moz-transition: all .5s ease-in-out;
-	-o-transition: all .5s ease-in-out;
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+
 }
 
 .date {

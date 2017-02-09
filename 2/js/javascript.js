@@ -49,7 +49,6 @@ $(function(){
 		}
     }
   });
-
 });
 
 function viewMoreGallery(){
