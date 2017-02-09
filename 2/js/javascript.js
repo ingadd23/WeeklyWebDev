@@ -35,7 +35,7 @@ $(function(){
 			$('html, body').animate({
 			scrollTop: $(hash).offset().top-79 // top margin
 		  }, 900, function(){
-			window.location.hash = hash;
+			//window.location.hash = hash;
 
 		  });
 		}
@@ -43,7 +43,7 @@ $(function(){
 			$('html, body').animate({
 			scrollTop: $(hash).offset().top-50
 		  }, 900, function(){
-			window.location.hash = hash;
+			//window.location.hash = hash;
 
 		  });
 		}

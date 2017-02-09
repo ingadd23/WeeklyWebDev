@@ -419,6 +419,9 @@ nav .navbar-brand {
 	background-position: center;
 	background-size: 100%;
     transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
 	
 }
 
@@ -437,6 +440,9 @@ nav .navbar-brand {
 	opacity: .4;
 	height: 100%;
 	transition: all .9s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
 }
 
 .date {
