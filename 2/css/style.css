@@ -37,7 +37,9 @@
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-position: center top;
-	height: 1000px;
+	height: 100vh; 
+	min-height:1000px; 
+	background-size: cover;
 }
 
 .navbar {
@@ -158,16 +160,16 @@ nav .navbar-brand {
 	bottom: 60px;
 	left: 0;
   	right: 0;
-	transition: opacity .3s ease 0s; 
-  	-webkit-transition: opacity .3s ease 0s;
-	animation: scroll_img 1s infinite;
+	transition: opacity 2s ease 0s; 
+  	-webkit-transition: opacity 2s ease 0s;
+	animation: scroll_img 2s infinite;
 	border: 2px solid transparent;
     border-radius: 40px;
 	
 }
 
 @keyframes scroll_img {
-    100% {
+    50% {
 		border: 2px solid #ff6033; 
 		padding: 5px;
 		border-radius: 40px; 
@@ -177,8 +179,8 @@ nav .navbar-brand {
 
 .hidden_scroll {
 	opacity: 0;
-	transition: opacity .1s ease 0s; 
-  	-webkit-transition: opacity .1s ease 0s;
+	transition: opacity .2s ease 0s; 
+  	-webkit-transition: opacity .2s ease 0s;
 }
 
 
@@ -680,6 +682,7 @@ footer > div > .row > div:last-child > p > span{
 		background-attachment: scroll;
 		background-position: center top 10%;
 		height: auto;
+		min-height: 100vh;
 		padding-bottom: 100px;
 	}
 	
