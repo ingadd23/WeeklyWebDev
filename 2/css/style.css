@@ -681,9 +681,9 @@ footer > div > .row > div:last-child > p > span{
 		background-repeat: no-repeat;
 		background-attachment: scroll;
 		background-position: center top 10%;
-		height: auto;
-		min-height: 100vh;
+		height: 100vh;
 		padding-bottom: 100px;
+		background-size: inherit;
 	}
 	
 	.navbar {
