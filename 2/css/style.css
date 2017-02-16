@@ -681,9 +681,14 @@ footer > div > .row > div:last-child > p > span{
 		background-color: #f9f8fb;
 		background-repeat: no-repeat;
 		background-attachment: scroll;
-		background-position: center top;
-		height: 100vh;
+		background-position: center top 10%;
+		max-height: 600px;
+		min-height: 300px;
 		background-size: inherit;
+		display: flex;
+		align-content: center;
+		align-items: center;
+		margin-top: 50px;
 	}
 	
 	.navbar {
@@ -757,14 +762,7 @@ footer > div > .row > div:last-child > p > span{
 		display: block;
 	}
 	
-	.home{
-		display: flex;
-		align-content: center;
-		align-items: center;
-		height: 80%;
-		margin-top: 50px;
-	}
-	
+
 	/* ------------------------ SECTION ABOUT ------------------------ */
 	
 	#about {
