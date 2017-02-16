@@ -21,7 +21,7 @@ $(function () {
 			
 			if(lastSectionName=='top_footer'){
 				if(windowHeight > lastSectionHeight){
-					if ($(this).offset().top < fromTop + 600) return this;
+					if ($(this).offset().top < fromTop ) return this; // + 600
 				}
 				else{
 					if ($(this).offset().top < fromTop) return this;
