@@ -38,7 +38,6 @@
 	background-attachment: scroll;
 	background-position: center top;
 	height: 100vh; 
-	//min-height:1000px; 
 	background-size: cover;
 }
 
@@ -128,6 +127,8 @@ nav .navbar-brand {
 	padding-top: 350px;
 	margin: 0;
 }
+
+
 
 #home p {
 	font-family: 'raleway-regular';
@@ -740,12 +741,13 @@ footer > div > .row > div:last-child > p > span{
 	
 	#home h1 {
 		font-size: 50px;
-		padding-top: 150px;
+		padding-top: 0px;
 		text-align: center;
 	}
 
 	#home p {
 		text-align: center;
+		
 	}
 	
 	#home .button {
@@ -753,6 +755,13 @@ footer > div > .row > div:last-child > p > span{
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
+	}
+	
+	.home{
+		display: flex;
+		align-content: center;
+		align-items: center;
+		height: 100vh;
 	}
 	
 	/* ------------------------ SECTION ABOUT ------------------------ */
