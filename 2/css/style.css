@@ -682,9 +682,8 @@ footer > div > .row > div:last-child > p > span{
 		background-repeat: no-repeat;
 		background-attachment: scroll;
 		background-position: center top 10%;
-		max-height: 550px;
 		min-height: 300px;
-		height: auto;
+		height: 550px;
 		background-size: inherit;
 		display: flex;
 		align-content: center;
