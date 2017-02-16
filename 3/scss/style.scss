@@ -29,6 +29,7 @@ $green: #7cc576;
 $black: #222222;
 $grey: #777777;
 $light_grey: #cccccc;
+$lightness_grey: #f9f9f9;
 $white: #fff;
 
 $font_14: 14px;
@@ -306,7 +307,10 @@ nav.nav_scroll{
 	
 	@media (max-width: $sm-1) {
 		margin-top: 0px;
-		min-height: 100vh;
+		height: 100vh;
+		display: flex;
+		align-content: center;
+		
 	}
 	
 	.container{
@@ -319,7 +323,8 @@ nav.nav_scroll{
 		padding-top: 170px;
 		
 		@media (max-width: $sm-1) {
-			padding-top: 30vh;
+			//height: 60vh;
+			padding-top: 0px;
 		}
 		
 		h1{
@@ -356,6 +361,7 @@ nav.nav_scroll{
 			@extend .green_button;
 			width: 200px;
 			margin-top: 55px;
+			//margin-bottom: 50px;
 		}
 	}
 }
@@ -675,7 +681,7 @@ nav.nav_scroll{
 /* -------------------- portfolio -------------------- */
 
 #culture{
-	background-color: $white;
+	background-color: $lightness_grey;
 	@extend .height;
 	
 	.container{
@@ -780,10 +786,12 @@ nav.nav_scroll{
 			align-items: center;
 			margin-top: 15px;
 			width: 100%;
+			margin-bottom: 30px;
 			
 			img{
 				@media (max-width: $sm-1) {
-					max-width: 50%;
+					width: 50%;
+					max-width: 160px;
 					height: auto;
 				}
 			}
@@ -793,42 +801,96 @@ nav.nav_scroll{
 				flex-direction: column;
 				align-content: center;
 				align-items: center;
-				margin-top: 55px;
+				padding-top: 30px;
+				padding-bottom: 40px;
+				padding-left: 15px;
+				padding-right: 15px;
 				margin-left: 70px;
 				margin-right: 70px;
-				width: 100%;
+				background-color: $lightness_grey;
+				position: relative;
 				
 				@media (max-width: $sm-1) {
-					margin-top:10px;
+					margin-top:25px;
 					margin-left: auto;
 					margin-right: auto;
+					padding-top: 20px;
+					padding-bottom: 30px;
 				}
 				
 				p:nth-child(1){
 					font-size: 22px;
 					margin-bottom: 10px;
 					
-					@media (max-width: $sm-1) {font-size: 16px;}
+					@media (max-width: $sm-1) {
+						font-size: 14px;
+						line-height: 23px;
+					}
 				}
 
 				p:nth-child(2){
 					font-size: 18px;
 					color: $green;
+					margin-bottom: 0px;
 					
 					@media (max-width: $sm-1) {font-size: 14px;}
-				}
+				}	
 			}
-			
+
 			&:nth-child(3){
 				flex-direction: row;
 				
 				@media (max-width: $sm-1) {flex-direction: column;}
+				
+				div{
+					 &:before {
+						content: "";
+						width: 0;
+						height: 0;
+						position: absolute;
+						top: 42%;
+						left: -39px;
+						border: solid transparent;
+						border-right-color: $lightness_grey;
+						border-width: 10px 20px;
+						 
+						 @media (max-width: $sm-1) {
+						 	top: -19px;;
+							left: 47%;
+							border: solid transparent;
+							border-bottom-color: $lightness_grey;
+							border-width: 10px 10px;
+						 }
+					}
+				}
 			}
 			
 			&:nth-child(4){
 				flex-direction: row-reverse;
 				
 				@media (max-width: $sm-1) {flex-direction: column;}
+				
+				div{
+					 &:after {
+						content: "";
+						width: 0;
+						height: 0;
+						position: absolute;
+						top: 42%;
+						right: -39px;
+						border: solid transparent;
+						border-left-color: $lightness_grey;
+						border-width: 10px 20px;
+						 
+						 @media (max-width: $sm-1) {
+						 	top: -19px;;
+							left: 47%;
+							border: solid transparent;
+							border-bottom-color: $lightness_grey;
+							border-width: 10px 10px;
+						 }
+					}
+				}
 			}
 		}
 	}

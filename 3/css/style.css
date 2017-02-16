@@ -242,7 +242,9 @@ nav.nav_scroll {
   @media (max-width: 767px) {
     #home {
       margin-top: 0px;
-      min-height: 100vh; } }
+      height: 100vh;
+      display: flex;
+      align-content: center; } }
   #home .container {
     display: flex;
     flex-direction: column;
@@ -252,7 +254,7 @@ nav.nav_scroll {
     padding-top: 170px; }
     @media (max-width: 767px) {
       #home .container {
-        padding-top: 30vh; } }
+        padding-top: 0px; } }
     #home .container h1 {
       color: #fff;
       font-size: 60px;
@@ -495,7 +497,7 @@ nav.nav_scroll {
 
 /* -------------------- portfolio -------------------- */
 #culture {
-  background-color: #fff; }
+  background-color: #f9f9f9; }
   #culture .container div {
     display: flex;
     flex-direction: row;
@@ -558,34 +560,44 @@ nav.nav_scroll {
     align-content: center;
     align-items: center;
     margin-top: 15px;
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 30px; }
     @media (max-width: 767px) {
       #clients .container > div img {
-        max-width: 50%;
+        width: 50%;
+        max-width: 160px;
         height: auto; } }
     #clients .container > div > div {
       display: flex;
       flex-direction: column;
       align-content: center;
       align-items: center;
-      margin-top: 55px;
+      padding-top: 30px;
+      padding-bottom: 40px;
+      padding-left: 15px;
+      padding-right: 15px;
       margin-left: 70px;
       margin-right: 70px;
-      width: 100%; }
+      background-color: #f9f9f9;
+      position: relative; }
       @media (max-width: 767px) {
         #clients .container > div > div {
-          margin-top: 10px;
+          margin-top: 25px;
           margin-left: auto;
-          margin-right: auto; } }
+          margin-right: auto;
+          padding-top: 20px;
+          padding-bottom: 30px; } }
       #clients .container > div > div p:nth-child(1) {
         font-size: 22px;
         margin-bottom: 10px; }
         @media (max-width: 767px) {
           #clients .container > div > div p:nth-child(1) {
-            font-size: 16px; } }
+            font-size: 14px;
+            line-height: 23px; } }
       #clients .container > div > div p:nth-child(2) {
         font-size: 18px;
-        color: #7cc576; }
+        color: #7cc576;
+        margin-bottom: 0px; }
         @media (max-width: 767px) {
           #clients .container > div > div p:nth-child(2) {
             font-size: 14px; } }
@@ -594,11 +606,45 @@ nav.nav_scroll {
       @media (max-width: 767px) {
         #clients .container > div:nth-child(3) {
           flex-direction: column; } }
+      #clients .container > div:nth-child(3) div:before {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 42%;
+        left: -39px;
+        border: solid transparent;
+        border-right-color: #f9f9f9;
+        border-width: 10px 20px; }
+        @media (max-width: 767px) {
+          #clients .container > div:nth-child(3) div:before {
+            top: -19px;
+            left: 47%;
+            border: solid transparent;
+            border-bottom-color: #f9f9f9;
+            border-width: 10px 10px; } }
     #clients .container > div:nth-child(4) {
       flex-direction: row-reverse; }
       @media (max-width: 767px) {
         #clients .container > div:nth-child(4) {
           flex-direction: column; } }
+      #clients .container > div:nth-child(4) div:after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 42%;
+        right: -39px;
+        border: solid transparent;
+        border-left-color: #f9f9f9;
+        border-width: 10px 20px; }
+        @media (max-width: 767px) {
+          #clients .container > div:nth-child(4) div:after {
+            top: -19px;
+            left: 47%;
+            border: solid transparent;
+            border-bottom-color: #f9f9f9;
+            border-width: 10px 10px; } }
 
 /* -------------------- contact_form -------------------- */
 #contact_form {

@@ -8,20 +8,26 @@ $(function () {
 		}
 	});
 	
-	lastSection = scrollItems[scrollItems.length - 1];
-	var lastSectionName = lastSection && lastSection.length ? lastSection[0].id : "";
-		
 	
 	$(window).scroll(function () {
+		
+		var fromTop = $(this).scrollTop() + 51;
+		
+		var lastSection = scrollItems.map(function () { 
+			if ($(this).offset().top < fromTop + 600)  return this;
+		});
+
+		lastSection = lastSection[lastSection.length - 1];
+		var lastSectionName = lastSection && lastSection.length ? lastSection[0].id : "";
+	
+	
 		var windowHeight = window.innerHeight;
 		var lastSectionHeight = $('#top_footer').height() + 100 + $('footer').height() + 60;
 
-		var fromTop = $(this).scrollTop() + 51;
 		var cur = scrollItems.map(function () { 
-			
 			if(lastSectionName=='top_footer'){
 				if(windowHeight > lastSectionHeight){
-					if ($(this).offset().top < fromTop ) return this; // + 600
+					if ($(this).offset().top < fromTop + 600 ) return this;
 				}
 				else{
 					if ($(this).offset().top < fromTop) return this;
@@ -50,8 +56,8 @@ $(function () {
 		}
 		
 		function getCurrentScroll() {
-		return window.pageYOffset || document.documentElement.scrollTop;
-	}
+			return window.pageYOffset || document.documentElement.scrollTop;
+		}
 	});
 	
 	
@@ -69,7 +75,6 @@ $(function () {
 		}
 	});
 });
-
 
 
 $(function(){
