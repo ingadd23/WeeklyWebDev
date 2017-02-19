@@ -1,0 +1,91 @@
+.blog{
+	display: flex;
+	flex-direction: row;
+}
+
+.blog__left{
+	width: 35%;
+	background-color: #e9e9e9;
+	background-image: url(../images/gear.png);
+	background-repeat: no-repeat;
+	background-position: center right;
+
+	@media (max-width: $sm-1) {display: none;}
+}
+
+.blog__right{
+	width: 65%;
+	background-image: url(../images/bg_learn_more.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+	@extend .height;
+	padding-left: 100px;
+	padding-right: 100px;
+
+	@media (min-width: $sm) and (max-width: $md-1) {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	@media (max-width: $sm-1) {
+		width: 100%;
+		background-attachment: scroll;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.blog__right__subtitle{
+
+	color: $light_grey;
+	font-size: $font_16;
+	line-height: 25px;
+	text-align: left;
+	max-width: 490px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+
+	@media (max-width: $sm-1) {
+		max-width: 100%;
+		text-align: center;
+		font-size: $font_14;
+	}
+}
+
+.blog__right__title{
+	color: $white;
+	text-align: left;
+	line-height: 50px;
+
+	@media (max-width: $sm-1) {text-align: center;}
+}
+
+.blog__right__title__span{color: $green;}
+
+.blog-list{
+	@extend .blog__right__subtitle;
+	margin-top: 0px;
+	margin-bottom: 6px;
+}
+
+.blog-list:before{
+	content: url(../images/checkmark.png);
+	vertical-align: -35%;
+	padding-right: 20px;
+}
+
+
+.blog-button{
+	display: block;
+	width: 170px;
+	margin-top: 45px;
+
+	@media (max-width: $sm-1) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}	

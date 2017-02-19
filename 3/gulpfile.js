@@ -9,7 +9,7 @@ var cache = require('gulp-cache');
 var del = require('del');
 
 gulp.task('default', function () {
-	gulp.watch('app/scss/*.scss', ['sass']);
+	gulp.watch('app/scss/**/*.scss', ['sass']);
 	gulp.watch('app/js/*.js', ['useref']);
 	gulp.watch('app/css/*.css', ['useref']);
 	gulp.watch('app/index.html', ['useref']);
@@ -20,7 +20,7 @@ gulp.task('default', function () {
 
 
 gulp.task('sass', function(){	
-	return gulp.src('app/scss/*.scss')
+	return gulp.src('app/scss/**/*.scss')
 		.pipe(sass())
 		.pipe(gulp.dest('app/css'));
 });

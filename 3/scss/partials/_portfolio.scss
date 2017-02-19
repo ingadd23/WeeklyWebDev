@@ -1,0 +1,137 @@
+.portfolio{
+	background-color: $white;
+	@extend .height;
+	padding-bottom: 150px;
+	background-image: url(../images/phone.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: top 260px right;
+	
+	@media (min-width: $sm) and (max-width: $md-1) {
+		background-size: 50%;
+		background-position: top 360px right;
+	}
+	
+	@media (max-width: $sm-1) {
+		background-size: 250px;
+		padding-bottom: 270px;
+		background-position: bottom right;
+	}
+}
+
+.portfolio__left {
+	text-align: left;
+	max-width: 450px;
+
+	@media (max-width: $sm-1) {
+		width: auto;
+		max-width: 100%;
+	}
+}
+
+.portfolio__left__title{
+	font-size: 18px;
+	margin-top: 0px;
+	letter-spacing: 0px;
+	text-align: left;
+	margin-bottom: 15px;
+
+	@media (max-width: $sm-1) {
+		text-align: center;
+		font-size: $font_16;
+	}
+}
+
+.portfolio__left__subtitle{
+	font-size: $font_16;
+	text-align: left;
+	margin-bottom: 20px;	
+	line-height: 23px;
+
+	@media (max-width: $sm-1) {
+		text-align: center;
+		font-size: $font_14;
+		margin-bottom: 30px;
+	}
+}
+
+.portfolio-row{
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center left;
+	min-height: 73px;
+	padding-left: 85px;
+	margin-bottom: 15px;
+
+	@media (max-width: $sm-1) {
+		background-position: top center;
+		padding-left: 0px;
+	}
+}
+
+.portfolio-row--1{background-image: url(../images/2_icon_e_commerance.png);}
+.portfolio-row--2{background-image: url(../images/2_icon_seo.png);}
+.portfolio-row--3{background-image: url(../images/2_icon_secure.png);}
+
+.portfolio-row__title{
+	font-size: 18px;
+	padding-top: 17px;
+	margin-top: 0px;
+	letter-spacing: 0px;
+	text-align: left;
+	margin-bottom: 1px;
+	text-transform: none;
+
+	@media (max-width: $sm-1) {
+		padding-top: 70px;
+		text-align: center;
+		font-size: $font_16;
+	}
+}
+
+.portfolio-row__subtitle{
+	font-size: $font_16;
+	text-align: left;
+	margin-bottom: 0px;
+	margin-top: 0px;
+
+	@media (max-width: $sm-1) {
+		text-align: center;
+		padding-bottom: 20px;
+		font-size: $font_14;
+	}
+}
+
+.portfolio-link{
+	font-family: "Montserrat-Medium";
+	color: $green;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	&:hover{
+		color: $black;
+
+		.svg-arrow{
+			stroke: $black;
+			fill: none;
+			margin-left: 10px;
+			transition: all .5s ease 0s;
+		}
+	}
+
+	@media (max-width: $sm-1) {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		width: 160px;
+	}
+}
+
+.svg-arrow {
+	cursor: pointer;
+	fill: none;
+	stroke: $green;
+	stroke-width: 2;
+	transition: all .5s ease 0s;
+}

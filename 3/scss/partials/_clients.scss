@@ -1,0 +1,129 @@
+.clients{
+	background-color: $white;
+	@extend .height;
+	padding-bottom: 50px;
+}
+
+.clients__subtitle{
+	@media (max-width: $sm-1) {
+		margin-bottom: 40px;
+	}
+}
+
+.clients-row{
+	display: flex;
+	align-content: center;
+	align-items: center;
+	flex-direction: row;
+	margin-top: 15px;
+	width: 100%;
+	margin-bottom: 30px;
+	
+	@media (max-width: $sm-1) {flex-direction: column;}
+}
+
+.clients-row--reverse{
+	flex-direction: row-reverse;
+
+	@media (max-width: $sm-1) {flex-direction: column;}
+}
+
+.clients-image{
+	@media (max-width: $sm-1) {
+		width: 50%;
+		max-width: 160px;
+		height: 50%;
+		max-height: 160px;
+		height: auto;
+	}
+}
+
+.clients-column{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	padding-top: 30px;
+	padding-bottom: 40px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: 70px;
+	margin-right: 70px;
+	background-color: $lightness_grey;
+	position: relative;
+	width: 100%;
+
+	@media (max-width: $sm-1) {
+		margin-top:25px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0;
+		padding-right: 0px;
+		padding-top: 20px;
+		padding-bottom: 30px;
+	}
+}
+
+
+.clients-column--1{
+	 &:before {
+		content: "";
+		width: 0;
+		height: 0;
+		position: absolute;
+		top: 42%;
+		left: -39px;
+		border: solid transparent;
+		border-right-color: $lightness_grey;
+		border-width: 10px 20px;
+
+		 @media (max-width: $sm-1) {
+			top: -19px;;
+			left: 47%;
+			border: solid transparent;
+			border-bottom-color: $lightness_grey;
+			border-width: 10px 10px;
+		 }
+	}
+}
+
+.clients-column--2{
+	 &:after {
+		content: "";
+		width: 0;
+		height: 0;
+		position: absolute;
+		top: 42%;
+		right: -39px;
+		border: solid transparent;
+		border-left-color: $lightness_grey;
+		border-width: 10px 20px;
+
+		 @media (max-width: $sm-1) {
+			top: -19px;;
+			left: 47%;
+			border: solid transparent;
+			border-bottom-color: $lightness_grey;
+			border-width: 10px 10px;
+		 }
+	}
+}
+
+.clients-columns__quote{
+	font-size: 22px;
+	margin-bottom: 10px;
+	
+
+	@media (max-width: $sm-1) {
+		font-size: 14px;
+		line-height: 23px;
+	}
+}
+
+.clients-columns__name{
+	font-size: 18px;
+	color: $green;
+	margin-bottom: 0px;
+
+	@media (max-width: $sm-1) {font-size: 14px;}
+}

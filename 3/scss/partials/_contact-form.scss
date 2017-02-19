@@ -1,0 +1,11 @@
+.contact-form{
+	background-color: $green;
+	@extend .height;
+	padding-bottom: 50px;
+	padding-top: 35px;
+}
+
+.contact-form__title{
+	color: $white;
+	letter-spacing: -0.5px;
+}

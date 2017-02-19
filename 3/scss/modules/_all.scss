@@ -1,0 +1,79 @@
+body{
+	background: #fff;
+}
+
+.container{
+	width: 940px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px 15px;
+	
+	@media (min-width: $sm) and (max-width: $md-1){
+		min-width: 720px;
+		width: auto;
+	}
+	@media (max-width: $sm-1) {
+		width: auto;
+	}
+}
+
+.height{
+	height: auto;
+	padding-top: 90px;
+	padding-bottom: 100px;
+	
+	@media (max-width: $sm-1){
+		padding-bottom: 50px;
+		padding-top: 40px;
+	}
+}
+
+.visible-sm{
+	@media (min-width: $sm){ display: none;	}
+
+	@media (max-width: $sm-1) {	display: block;	}
+}
+
+.title{
+	font-family: "Monsterrat-Bold";
+	color: $black;
+	font-size: 40px;
+	text-transform: uppercase;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	letter-spacing: -1px;
+	text-align: center;
+	@media (max-width: $sm-1){
+		font-size: 30px;
+		line-height: 40px;
+		width: auto;
+		text-align: center;
+	}
+}
+
+.subtitle{
+	font-family: "RobotoSlab-Regular";
+	color: $grey;
+	font-size: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	letter-spacing: -.5px;
+	text-align: center;
+	width: 100%;
+	
+	@media (max-width: $sm-1){
+		font-size: 14px;
+		line-height: 30px;
+		width: 100%;
+	}
+}
+
+.subtitle--margin{
+	margin-top: 10px;
+	margin-bottom: 85px;
+	
+	@media (max-width: $sm-1) {
+		margin-bottom: 50px;
+	}
+}
