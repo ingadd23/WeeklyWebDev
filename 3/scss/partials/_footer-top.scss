@@ -1,0 +1,106 @@
+.top-footer{
+	background-color: $black;
+	@extend .height;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	
+	a{
+		&:hover{ color: $green; }
+	}
+}
+
+.top-footer-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+
+	@media (max-width: $sm-1) {
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 9px;
+	}
+}
+
+.top-footer__title{
+	color: $white;
+	font-size: 18px;
+	text-align: left;
+	letter-spacing: 0px;
+	margin-bottom: 15px;
+
+	@media (max-width: $sm-1) { text-align: center;	}
+}
+
+.top-footer__subtitle{
+	color: $light_grey;
+	font-size: 16px;
+	margin-bottom: 0px;
+	text-align: left;
+	margin-top: 12px;
+	text-decoration: none;
+
+	@media (max-width: $sm-1) {
+		font-size: 14px;
+		margin-top: 5px;
+	}
+}
+
+.top-footer-column{
+	@media (max-width: $sm-1) {	min-width: 90%;	}
+}
+
+.tf-contact { 
+	width: 30%; 
+	font-style: normal;
+	
+	.subtitle--contact{
+		line-height: 23px;
+		margin-top: 5px;
+	}
+}
+
+.tf-post{ width: 40%; }
+
+.tf-tweets{ width: 30%; }
+
+.tf-tweets-column{
+
+	.tweets--link{
+		line-height: 23px;
+		margin-top: 5px;
+	}
+	
+	.tweets--hash {	margin-top: 5px; }
+
+	.tweets--time{
+		margin-top: 10px;
+		font-size: 12px;
+
+		@media (max-width: $sm-1) {
+			margin-top: -10px;
+			margin-bottom: 5px;
+		}
+	}
+}
+
+.top-footer-row{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: baseline;
+	margin-bottom: 9px;
+
+}
+
+.top-footer-img{
+	padding-top: 10px;
+	align-self: center;
+	margin-right: 20px;
+}
+
+.top-footer-img--top{
+	padding-top: 10px;
+	align-self: flex-start;
+}
+		

@@ -1,0 +1,19 @@
+.logos{
+	background-color: $white;
+	@extend .height;
+	padding-bottom: 60px;
+	padding-top: 60px;	
+}
+
+.logos-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	@media (max-width: $sm-1) {flex-direction: column;}
+}
+
+.logos-img{
+	@media (max-width: $sm-1) {padding: 10px;}
+}

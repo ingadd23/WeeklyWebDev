@@ -7,69 +7,67 @@
 	<meta name="description" content="zadanie 3 weekly webdev">
 	<meta name="keywords" content="">
 	<link rel="shortcut icon" type="image/x-icon" href="images/logo_ico.ico"/> 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="js/javascript.min.js"></script>
+	
 	<link rel="stylesheet" href="css/style.min.css">
 
 </head>
 <body>
-
-	<header>
+	<header class="header">
 		<div class="container">
-			<nav>
-				<a href="#"><img src="images/logo.png" alt="logo"></a>
-				<button id="menu_button" type="button" class="visible_sm" data-target="#menu">
-					  <span></span>
-					  <span></span>
-					  <span></span>
-					  <span></span>
+			<nav class="nav">
+				<a href="#home"><img src="images/logo.png" alt="treehouse"></a>
+				<button id="menu-button" type="button" class="menu-button visible-sm" data-target="#menu">
+					  <span class="menu-button__span"></span>
+					  <span class="menu-button__span"></span>
+					  <span class="menu-button__span"></span>
+					  <span class="menu-button__span"></span>
 				</button>
 				
-				<ul id="menu" class="">
-					<li class="active"><a href="#home">home</a></li>
-					<li><a href="#about">about</a></li>
-					<li><a href="#blog">blog</a></li>
-					<li><a href="#portfolio">portfolio</a></li>
-					<li><a href="#top_footer">contact</a></li>
+				<ul id="menu" class="menu">
+					<li class="menu__li menu__li--active"><a class="menu__a" href="#home">home</a></li>
+					<li class="menu__li"><a class="menu__a" href="#about">about</a></li>
+					<li class="menu__li"><a class="menu__a" href="#blog">blog</a></li>
+					<li class="menu__li"><a class="menu__a" href="#portfolio">portfolio</a></li>
+					<li class="menu__li"><a class="menu__a" href="#top_footer">contact</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 	
-	
-	<section id="home">
-		<div class="container">
-			<h1>Creative Digital Solutions</h1>
-			<p>Proin iaculis purus consequat sem cure.</p>
-			<a href="#portfolio" class="button">view portfolio </a>
+	<section id="home" class="home">
+		<div class="container home-container">
+			<h1 class="title home__title">Creative Digital Solutions</h1>
+			<p class="subtitle home__subtitle" >Proin iaculis purus consequat sem cure.</p>
+			<a href="#portfolio" class="button-1 home-button">view portfolio </a>
 		</div>
 	</section>
 	
-	<section id="about">
+	<section id="about" class="about">
 		<div class="container">
-			<h1>Professional Services</h1>
-			<p>Proin iaculis purus consequat sem cure </p>
-			<div>
-				<div>
-					<img src="images/1_icon_heart.png" alt="1_icon_heart">
-					<h1>beautiful designs</h1>
-					<p>Proin iaculis purus consequat sem cure 
+			<h2 class="title">Professional Services</h2>
+			<p class="subtitle subtitle--margin">Proin iaculis purus consequat sem cure </p>
+			
+			<div class="about-row">
+				<div class="about-column about-column--1">
+					<img src="images/1_icon_heart.png" alt="beautiful designs">
+					<h3 class="title about-column__title">beautiful designs</h3>
+					<p class="subtitle subtitle--margin about-column__subtitle">Proin iaculis purus consequat sem cure 
 						digni ssim. Donec porttitora entum suscipit 
 						aenean rhoncus posuere odio in tincidunt.</p>
 				</div>
 				
-				<div>
-					<img src="images/1_icon_phone.png" alt="1_icon_phone">
-					<h1>responsive web</h1>
-					<p>Proin iaculis purus consequat sem cure 
+				<div class="about-column about-column--2">
+					<img src="images/1_icon_phone.png" alt="responsive web">
+					<h3 class="title about-column__title ">responsive web</h3>
+					<p class="subtitle subtitle--margin about-column__subtitle">Proin iaculis purus consequat sem cure 
 						digni ssim. Donec porttitora entum suscipit 
 						aenean rhoncus posuere odio in tincidunt.</p>
 				</div>
 				
-				<div>
-					<img src="images/1_icon_marketing.png" alt="1_icon_marketing">
-					<h1>Marketing tools</h1>
-					<p>Proin iaculis purus consequat sem cure 
+				<div class="about-column about-column--3">
+					<img src="images/1_icon_marketing.png" alt="marketing tools">
+					<h3 class="title about-column__title">marketing tools</h3>
+					<p class="subtitle subtitle--margin about-column__subtitle">Proin iaculis purus consequat sem cure 
 						digni ssim. Donec porttitora entum suscipit 
 						aenean rhoncus posuere odio in tincidunt.</p>
 				</div>
@@ -77,55 +75,55 @@
 		</div>
 	</section>
 	
-	<section id="blog">
-		<div class="left_container"> </div>
+	<section id="blog" class="blog">
+		<div class="blog__left"> </div>
 		
-		<div class="rigth_container">
-			
-			<h1>Just relax <span> &</span> <br/>let us do the heavy lifting</h1>
-			<p>Proin iaculis purus consequat sem cure  digni ssim. Donec 
+		<div class="blog__right">
+			<h2 class="title blog__right__title">Just relax <span class="blog__right__title__span"> &</span> <br/>let us do the heavy lifting</h2>
+			<p class="subtitle blog__right__subtitle">Proin iaculis purus consequat sem cure  digni ssim. Donec 
 			porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
 			
-				<p>Initial Setup & Customizations </p>
-				<p>Regular Updates </p>
-				<p>Round The Clock Support </p>
-			<a href="#blog" class="button">learn more </a>
+			<p class="blog-list">Initial Setup & Customizations </p>
+			<p class="blog-list">Regular Updates </p>
+			<p class="blog-list">Round The Clock Support </p>
 			
+			<a href="#blog" class="button-1 blog-button">learn more </a>
 		</div>
 	</section>
 	
-	<section id="portfolio">
+	<section id="portfolio" class="portfolio">
 		<div class="container">
-			<h1>latest project</h1>
-			<p>Proin iaculis purus consequat sem cure </p>
-			<div class="left_container">
-				<h1>Developing a framework</h1>
-				<p>Proin iaculis purus consequat sem cure  digni ssim 
+			<h2 class="title">latest project</h2>
+			<p class="subtitle subtitle--margin">Proin iaculis purus consequat sem cure </p>
+			
+			<div class="portfolio__left">
+				<h3 class="title portfolio__left__title">Developing a framework</h3>
+				<p class="subtitle subtitle--margin portfolio__left__subtitle">Proin iaculis purus consequat sem cure  digni ssim 
 					donec porttitora entum suscipit  aenean rhoncus posuere 
 					odio in tincidunt.</p>				
 				
-				<div>
-					<h1>E-Commerce Ready</h1>
-					<p>Proin iaculis purus consequat sem cure  digni ssim. </p>
+				<div class="portfolio-row portfolio-row--1">
+					<h4 class="title portfolio-row__title">E-Commerce Ready</h4>
+					<p class="subtitle subtitle--margin portfolio-row__subtitle">Proin iaculis purus consequat sem cure  digni ssim. </p>
 				</div>
 				
-				<div>	
-					<h1>Powerful SEO Features</h1>
-					<p>Proin iaculis purus consequat sem cure. </p>	
+				<div class="portfolio-row portfolio-row--2">	
+					<h4 class="title portfolio-row__title">Powerful SEO Features</h4>
+					<p class="subtitle subtitle--margin portfolio-row__subtitle">Proin iaculis purus consequat sem cure. </p>	
 				</div>
 				
-				<div>	
-					<h1>Secure Encryption</h1>
-					<p>Proin iaculis purus consequat sem cure iaculis purus. </p>
+				<div class="portfolio-row portfolio-row--3">	
+					<h4 class="title portfolio-row__title">Secure Encryption</h4>
+					<p class="subtitle subtitle--margin portfolio-row__subtitle">Proin iaculis purus consequat sem cure iaculis purus. </p>
 					
 				</div>
 				
-				<p>Proin iaculis purus consequat sem cure  digni ssim 
+				<p class="subtitle subtitle--margin portfolio__left__subtitle">Proin iaculis purus consequat sem cure  digni ssim 
 					donec porttitora entum suscipit  aenean rhoncus posuere 
 					odio in.</p>
 					
-				<a href="#">view details
-					<svg width="23" height="15" >
+				<a href="#" class="portfolio-link">view details
+					<svg width="23" height="15" class="svg-arrow">
 						<line x1="9" y1="8" x2="20" y2="8"/>
 						<polyline points="16,4 22,8 16,13 "/>
 					</svg>
@@ -134,31 +132,31 @@
 		</div>
 	</section>
 	
-	<section id="culture">
+	<section id="culture" class="culture">
 		 <div class="container">
-			<h1>culture & values</h1>
-			<p>Proin iaculis purus consequat cure. </p>
-			<div>
-				<div>
-					<span><img src="images/3_icon_work.png" alt="3_icon_work"></span>
-					<h1>Work-Life Balance</h1>
-					<p>Proin iaculis purus consequat sem cure 
+			<h2 class="title">culture & values</h2>
+			<p class="subtitle subtitle--margin">Proin iaculis purus consequat cure. </p>
+			<div class="culture-row">
+				<div class="culture-column culture-column--1">
+					<span class="culture-column__span"><img src="images/3_icon_work.png" alt="Work-Life Balance"></span>
+					<h3 class="title culture-column__title">Work-Life Balance</h3>
+					<p class="subtitle subtitle--margin culture-column__subtitle">Proin iaculis purus consequat sem cure 
 						digni ssim. Donec porttitora entum suscipit 
 						aenean rhoncus posuere odio in tincidunt.</p>
 				</div>
 
-				<div>
-					<span><img src="images/3_icon_quality.png" alt="3_icon_quality"></span>
-					<h1>Quality Over Quantity</h1>
-					<p>Proin iaculis purus consequat sem cure 
+				<div class="culture-column culture-column--2">
+					<span class="culture-column__span"><img src="images/3_icon_quality.png" alt="Quality Over Quantity"></span>
+					<h3 class="title culture-column__title">Quality Over Quantity</h3>
+					<p class="subtitle subtitle--margin culture-column__subtitle">Proin iaculis purus consequat sem cure 
 						digni ssim. Donec porttitora entum suscipit 
 						aenean rhoncus posuere odio in tincidunt.</p>
 				</div>
 
-				<div>
-					<span><img src="images/3_icon_deliver.png" alt="3_icon_deliver"></span>
-					<h1>Deliver Excellence</h1>
-					<p>Proin iaculis purus consequat sem cure 
+				<div class="culture-column culture-column--3">
+					<span class="culture-column__span"><img src="images/3_icon_deliver.png" alt="Deliver Excellence"></span>
+					<h3 class="title culture-column__title">Deliver Excellence</h3>
+					<p class="subtitle subtitle--margin culture-column__subtitle">Proin iaculis purus consequat sem cure 
 						digni ssim. Donec porttitora entum suscipit 
 						aenean rhoncus posuere odio in tincidunt.</p>
 				</div>
@@ -166,27 +164,27 @@
 		 </div>
 	</section>
 	
-	<section id="clients">
+	<section id="clients" class="clients">
 		<div class="container">
-			<h1>our awesome clients</h1>
-			<p>Proin iaculis purus consequat cure. </p>
+			<h2 class="title">our awesome clients</h2>
+			<p class="subtitle subtitle--margin clients__subtitle">Proin iaculis purus consequat cure. </p>
 			
-			<div>
-				<img src="images/client_1.png" alt="">
-				<div>
-					<p>“ Proin iaculis purus consequat sem cure  digni ssim 
+			<div class="clients-row ">
+				<img src="images/client_1.png" class="clients-image" alt="Jamie Richardson">
+				<div class="clients-column clients-column--1">
+					<p class="subtitle subtitle--margin clients-columns__quote">“ Proin iaculis purus consequat sem cure  digni ssim 
 						donec porttitora entum suscipit aenean rhoncus. ”  </p>
-					<p>- Jamie Richardson, Founder of Cocoa Media</p>
+					<p class="subtitle subtitle--margin clients-columns__name">- Jamie Richardson, Founder of Cocoa Media</p>
 					
 				</div>
 			</div>
 			
-			<div>
-				<img src="images/client_2.png" alt="">
-				<div>
-					<p>“ Proin iaculis purus consequat sem cure  digni ssim 
+			<div class="clients-row clients-row--reverse">
+				<img src="images/client_2.png" class="clients-image" alt="Kim Thompson" >
+				<div class="clients-column clients-column--2">
+					<p class="subtitle subtitle--margin clients-columns__quote">“ Proin iaculis purus consequat sem cure  digni ssim 
 						donec porttitora entum suscipit aenean rhoncus. ”  </p>
-					<p>- Jamie Richardson, Founder of Cocoa Media</p>
+					<p class="subtitle subtitle--margin clients-columns__name">- Kim Thompson, Founder of Rainel</p>
 				</div>
 			</div>
 			
@@ -194,115 +192,132 @@
 		</div>
 	</section>
 	
-	<section id="contact_form">
+	<section id="contact-form" class="contact-form">
 		<div class="container">
-			<h1>ready to talk about your next project?</h1>
-			<a href="#" class="button_cf">contact us</a>
+			<h2 class="title contact-form__title">ready to talk about your next project?</h2>
+			<a href="#" class="button-2">contact us</a>
 		</div>
 	</section>
 	
-	<section id="logos">
-		<div class="container">
-			<img src="images/4_icon_envato.png" alt="4_icon_envato">
-			<img src="images/4_icon_wordpress.png" alt="4_icon_wordpress">
-			<img src="images/4_icon_ae_tuts.png" alt="4_icon_ae_tuts">
-			<img src="images/4_icon_microlancer.png" alt="4_icon_microlancer">
+	<section id="logos" class="logos">
+		<div class="container logos-container">
+			<img src="images/4_icon_envato.png" class="logos-img" alt="envato">
+			<img src="images/4_icon_wordpress.png" class="logos-img" alt="wordpress">
+			<img src="images/4_icon_ae_tuts.png" class="logos-img" alt="ae_tuts">
+			<img src="images/4_icon_microlancer.png" class="logos-img" alt="microlancer">
 		</div>
 	</section>
 	
-	<section id="top_footer">
-		<div class="container">
-			<div>
-				<h1>contact us</h1>
-				<div>
-					<img src="images/5_icon_location.png" alt="5_icon_location">
-					<p>55 Main St. <br/>
+	<section id="top-footer" class="top-footer">
+		<div class="container top-footer-container">
+			<address class="top-footer-column tf-contact">
+				<h2 class="title top-footer__title">contact us</h2>
+				<div class="top-footer-row tf-contact-row">
+					<img src="images/5_icon_location.png" class="top-footer-img top-footer-img--top" alt="55 Main St.Toronto, ON M1H 3A5">
+					<p class="subtitle top-footer__subtitle subtitle--contact">55 Main St. <br/>
 					Toronto, ON<br/>
 					M1H 3A5</p>
 				</div>
 				
-				<div>
-					<img src="images/5_icon_phone.png" alt="5_icon_phone">
-					<p>(416) 555-5252</p>
+				
+				
+				<div class="top-footer-row tf-contact-row">
+					<img src="images/5_icon_phone.png" class="top-footer-img" alt="(416) 555-5252">
+					<p class="subtitle top-footer__subtitle subtitle--contact">(416) 555-5252</p>
 				</div>
 				
-				<div>
-					<img src="images/5_icon_email.png" alt="5_icon_email">
-					<p>hello@treehouse.com</p>
+				<div class="top-footer-row tf-contact-row">
+					<img src="images/5_icon_email.png" class="top-footer-img" alt="hello@treehouse.com">
+					<p class="subtitle top-footer__subtitle subtitle--contact">hello@treehouse.com</p>
+				</div>
+				
+			</address>
+			
+			<div class="top-footer-column tf-post">
+				<h2 class="title top-footer__title">latest post</h2>
+				<div class="top-footer-row tf-post-row">
+					<img src="images/5_icon_text.png" class="top-footer-img" alt="post1">
+					<a href="#" class="subtitle top-footer__subtitle">Made With Love In Toronto</a>
+				</div>
+				
+				<div class="top-footer-row tf-post-row">
+					<img src="images/5_icon_picture.png" class="top-footer-img" alt="post2">
+					<a href="#" class="subtitle top-footer__subtitle">Startup News & Emerging Tech</a>
+				</div>
+				
+				<div class="top-footer-row tf-post-row">
+					<img src="images/5_icon_text.png" class="top-footer-img" alt="post3">
+					<a href="#" class="subtitle top-footer__subtitle">Bitcoin Will Soon Rule The World</a>
+				</div>
+				
+				<div class="top-footer-row tf-post-row">
+					<img src="images/5_icon_text.png" class="top-footer-img" alt="post4">
+					<a href="#" class="subtitle top-footer__subtitle">Wearable Technology On The Rise</a>
+				</div>
+				
+				<div class="top-footer-row tf-post-row">
+					<img src="images/5_icon_play.png" class="top-footer-img" alt="post5">
+					<a href="#" class="subtitle top-footer__subtitle">Learn Web Design In 30 Days!</a>
 				</div>
 				
 			</div>
 			
-			<div>
-				<h1>latest post</h1>
-				<div>
-					<img src="images/5_icon_text.png" alt="5_icon_text">
-					<a href="#">Made With Love In Toronto</a>
-				</div>
-				
-				<div>
-					<img src="images/5_icon_picture.png" alt="5_icon_picture">
-					<a href="#">Startup News & Emerging Tech</a>
-				</div>
-				
-				<div>
-					<img src="images/5_icon_text.png" alt="5_icon_text">
-					<a href="#">Bitcoin Will Soon Rule The World</a>
-				</div>
-				
-				<div>
-					<img src="images/5_icon_text.png" alt="5_icon_text">
-					<a href="#">Wearable Technology On The Rise</a>
-				</div>
-				
-				<div>
-					<img src="images/5_icon_play.png" alt="5_icon_play">
-					<a href="#">Learn Web Design In 30 Days!</a>
-				</div>
-				
-			</div>
-			
-			<div>
-				<h1>latest tweets</h1>
-				<div>
-					<img src="images/5_icon_bird.png" alt="5_icon_bird">
-					<div>
-						<a href="#">Confucius: Life is really simple, 
+			<div class="top-footer-column tf-tweets">
+				<h2 class="title top-footer__title">latest tweets</h2>
+				<div class="top-footer-row tf-tweets-row">
+					<img src="images/5_icon_bird.png" class="top-footer-img top-footer-img--top" alt="5_icon_bird">
+					<div class="tf-tweets-column">
+						<a href="#" class="subtitle top-footer__subtitle tweets--link">Confucius: Life is really simple, 
 						but we insist on making it 
 						complicated. </a>
-						<p><b>#famousquotes </b></p>
-						<p>8 mins ago</p>
+						<p class="subtitle top-footer__subtitle tweets--hash"><b>#famousquotes </b></p>
+						<p class="subtitle top-footer__subtitle tweets--time">8 mins ago</p>
 					</div>
 				</div>
 				
-				<div>
-					<img src="images/5_icon_bird.png" alt="5_icon_bird">
-					<div>
-						<a href="#">Grab the Free Treehouse web template at FreebiesXpress!  </a>
-						<p><b>#freebies #templates </b></p>
-						<p>2 days ago</p>
+				<div class="top-footer-row tf-tweets-row">
+					<img src="images/5_icon_bird.png" class="top-footer-img top-footer-img--top" alt="5_icon_bird">
+					<div class="tf-tweets-column">
+						<a href="#" class="subtitle top-footer__subtitle tweets--link">Grab the Free Treehouse web template at FreebiesXpress!  </a>
+						<p class="subtitle top-footer__subtitle tweets--hash"><b>#freebies #templates </b></p>
+						<p class="subtitle top-footer__subtitle tweets--time">2 days ago</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	
-	<footer>
-		<div class="container">
-			<div>
-				© Copyright 2014 FreebiesXpress.com
+	<footer class="footer">
+		<div class="container footer-container">
+			<div class="footer-row footer-row__copy">
+				<p>© Copyright 2014 FreebiesXpress.com</p>
 			</div>
 
-			<div>
-				<a href=""><img src="images/6_icon_twitter.png" alt="6_icon_twitter"></a>
-				<a href=""><img src="images/6_icon_facebook.png" alt="6_icon_facebook"></a>
-				<a href=""><img src="images/6_icon_pinterest.png" alt="6_icon_pinterest"></a>
-				<a href=""><img src="images/6_icon_google.png" alt="6_icon_google"></a>
+			<div class="footer-row footer-row__social">
+				<a href="#" class="social-link social-link--twitter">
+					<img src="images/6_icon_twitter.png" class="social-icon" alt="tweeter">
+				</a>
+				
+				<a href="#" class="social-link social-link--facebook">
+					<img src="images/6_icon_facebook.png" class="social-icon" alt="facebook">
+				</a>
+				
+				<a href="#" class="social-link social-link--pinterest">
+					<img src="images/6_icon_pinterest.png" class="social-icon" alt="pinterest">
+				</a>
+				
+				<a href="#" class="social-link social-link--google">
+					<img src="images/6_icon_google.png" class="social-icon" alt="google">
+				</a>
 			</div>
 			
-			<div></div>
+			<div class="footer-row"></div>
 
 		</div>
 	</footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/javascript.min.js"></script>
+	
 </body>
 </html>
