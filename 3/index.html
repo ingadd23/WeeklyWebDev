@@ -8,7 +8,9 @@
 	<meta name="keywords" content="">
 	<link rel="shortcut icon" type="image/x-icon" href="images/logo_ico.ico"/> 
 	
-	<link rel="stylesheet" href="css/style.min.css">
+	<!--build:css css/style.min.css-->
+	<link rel="stylesheet" href="css/style.css">
+	<!--endbuild-->
 
 </head>
 <body>
@@ -28,7 +30,7 @@
 					<li class="menu__li"><a class="menu__a" href="#about">about</a></li>
 					<li class="menu__li"><a class="menu__a" href="#blog">blog</a></li>
 					<li class="menu__li"><a class="menu__a" href="#portfolio">portfolio</a></li>
-					<li class="menu__li"><a class="menu__a" href="#top_footer">contact</a></li>
+					<li class="menu__li"><a class="menu__a" href="#top-footer">contact</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -48,29 +50,35 @@
 			<p class="subtitle subtitle--margin">Proin iaculis purus consequat sem cure </p>
 			
 			<div class="about-row">
-				<div class="about-column about-column--1">
+				<figure class="about-column about-column--1">
 					<img src="images/1_icon_heart.png" alt="beautiful designs">
 					<h3 class="title about-column__title">beautiful designs</h3>
-					<p class="subtitle subtitle--margin about-column__subtitle">Proin iaculis purus consequat sem cure 
+					<figcaption class="subtitle subtitle--margin about-column__subtitle">
+						Proin iaculis purus consequat sem cure 
 						digni ssim. Donec porttitora entum suscipit 
-						aenean rhoncus posuere odio in tincidunt.</p>
-				</div>
+						aenean rhoncus posuere odio in tincidunt.
+					</figcaption>
+				</figure>
 				
-				<div class="about-column about-column--2">
+				<figure class="about-column about-column--2">
 					<img src="images/1_icon_phone.png" alt="responsive web">
 					<h3 class="title about-column__title ">responsive web</h3>
-					<p class="subtitle subtitle--margin about-column__subtitle">Proin iaculis purus consequat sem cure 
+					<figcaption class="subtitle subtitle--margin about-column__subtitle">
+						Proin iaculis purus consequat sem cure 
 						digni ssim. Donec porttitora entum suscipit 
-						aenean rhoncus posuere odio in tincidunt.</p>
-				</div>
+						aenean rhoncus posuere odio in tincidunt.
+					</figcaption>
+				</figure>
 				
-				<div class="about-column about-column--3">
+				<figure class="about-column about-column--3">
 					<img src="images/1_icon_marketing.png" alt="marketing tools">
 					<h3 class="title about-column__title">marketing tools</h3>
-					<p class="subtitle subtitle--margin about-column__subtitle">Proin iaculis purus consequat sem cure 
+					<figcaption class="subtitle subtitle--margin about-column__subtitle">
+						Proin iaculis purus consequat sem cure 
 						digni ssim. Donec porttitora entum suscipit 
-						aenean rhoncus posuere odio in tincidunt.</p>
-				</div>
+						aenean rhoncus posuere odio in tincidunt.
+					</figcaption>
+				</figure>
 			</div>
 		</div>
 	</section>
@@ -83,10 +91,12 @@
 			<p class="subtitle blog__right__subtitle">Proin iaculis purus consequat sem cure  digni ssim. Donec 
 			porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
 			
-			<p class="blog-list">Initial Setup & Customizations </p>
-			<p class="blog-list">Regular Updates </p>
-			<p class="blog-list">Round The Clock Support </p>
-			
+			<ul class="blog-list">
+				<li class="blog-list__li">Initial Setup & Customizations</li>
+				<li class="blog-list__li">Regular Updates</li>
+				<li class="blog-list__li">Round The Clock Support</li>
+			</ul>
+
 			<a href="#blog" class="button-1 blog-button">learn more </a>
 		</div>
 	</section>
@@ -137,29 +147,47 @@
 			<h2 class="title">culture & values</h2>
 			<p class="subtitle subtitle--margin">Proin iaculis purus consequat cure. </p>
 			<div class="culture-row">
-				<div class="culture-column culture-column--1">
-					<span class="culture-column__span"><img src="images/3_icon_work.png" alt="Work-Life Balance"></span>
+				<figure class="culture-column culture-column--1">
+					<span class="culture-column__span">
+						<img src="images/3_icon_work.png" alt="Work-Life Balance">
+					</span>
+
 					<h3 class="title culture-column__title">Work-Life Balance</h3>
-					<p class="subtitle subtitle--margin culture-column__subtitle">Proin iaculis purus consequat sem cure 
-						digni ssim. Donec porttitora entum suscipit 
-						aenean rhoncus posuere odio in tincidunt.</p>
-				</div>
 
-				<div class="culture-column culture-column--2">
-					<span class="culture-column__span"><img src="images/3_icon_quality.png" alt="Quality Over Quantity"></span>
+					<figcaption class="subtitle subtitle--margin culture-column__subtitle">
+						Proin iaculis purus consequat sem cure 
+						digni ssim. Donec porttitora entum suscipit 
+						aenean rhoncus posuere odio in tincidunt.
+					</figcaption>
+				</figure>
+
+				<figure class="culture-column culture-column--2">
+					<span class="culture-column__span">
+						<img src="images/3_icon_quality.png" alt="Quality Over Quantity">
+					</span>
+
 					<h3 class="title culture-column__title">Quality Over Quantity</h3>
-					<p class="subtitle subtitle--margin culture-column__subtitle">Proin iaculis purus consequat sem cure 
-						digni ssim. Donec porttitora entum suscipit 
-						aenean rhoncus posuere odio in tincidunt.</p>
-				</div>
 
-				<div class="culture-column culture-column--3">
-					<span class="culture-column__span"><img src="images/3_icon_deliver.png" alt="Deliver Excellence"></span>
-					<h3 class="title culture-column__title">Deliver Excellence</h3>
-					<p class="subtitle subtitle--margin culture-column__subtitle">Proin iaculis purus consequat sem cure 
+					<figcaption class="subtitle subtitle--margin culture-column__subtitle">
+						Proin iaculis purus consequat sem cure 
 						digni ssim. Donec porttitora entum suscipit 
-						aenean rhoncus posuere odio in tincidunt.</p>
-				</div>
+						aenean rhoncus posuere odio in tincidunt.
+					</figcaption>
+				</figure>
+
+				<figure class="culture-column culture-column--3">
+					<span class="culture-column__span">
+						<img src="images/3_icon_deliver.png" alt="Deliver Excellence">
+					</span>
+
+					<h3 class="title culture-column__title">Deliver Excellence</h3>
+
+					<figcaption class="subtitle subtitle--margin culture-column__subtitle">
+						Proin iaculis purus consequat sem cure 
+						digni ssim. Donec porttitora entum suscipit 
+						aenean rhoncus posuere odio in tincidunt.
+					</figcaption>
+				</figure>
 			</div>
 		 </div>
 	</section>
@@ -317,7 +345,9 @@
 	</footer>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="js/javascript.min.js"></script>
+	<!--build:js js/javascript.min.js -->
+	<script src="js/javascript.js"></script>
+	<!-- endbuild -->
 	
 </body>
 </html>

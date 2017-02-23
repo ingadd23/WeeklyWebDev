@@ -16,16 +16,16 @@ $(function () {
 		var lastSection = scrollItems.map(function () { 
 			if ($(this).offset().top < fromTop + 600)  return this;
 		});
-
+		
 		lastSection = lastSection[lastSection.length - 1];
 		var lastSectionName = lastSection && lastSection.length ? lastSection[0].id : "";
 	
 	
 		var windowHeight = window.innerHeight;
-		var lastSectionHeight = $('#top_footer').height() + 100 + $('footer').height() + 60;
+		var lastSectionHeight = $('#top-footer').height() + 100 + $('footer').height() + 60;
 
 		var cur = scrollItems.map(function () { 
-			if(lastSectionName=='top_footer'){
+			if(lastSectionName=='top-footer'){
 				if(windowHeight > lastSectionHeight){
 					if ($(this).offset().top < fromTop + 600 ) return this;
 				}

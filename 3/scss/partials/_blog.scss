@@ -67,12 +67,17 @@
 .blog__right__title__span{color: $green;}
 
 .blog-list{
+	padding-left: 0px;
+}
+
+.blog-list__li{
 	@extend .blog__right__subtitle;
 	margin-top: 0px;
 	margin-bottom: 6px;
+	list-style: none;
 }
 
-.blog-list:before{
+.blog-list__li:before{
 	content: url(../images/checkmark.png);
 	vertical-align: -35%;
 	padding-right: 20px;
