@@ -1,0 +1,161 @@
+.submenu-bar{
+	@media (min-width: $sm) {
+		display: block;
+        width: 0%;
+        transition: all 1s ease;
+        overflow: hidden;
+    
+        .submenu-bar__category{
+            display: none;
+        }
+	}
+    
+    @media (max-width: $sm-1) {
+		display: none;
+	}
+}
+
+.submenu-bar--in{
+	width: 25%;
+	background-color: $submenu-color;
+	
+	.submenu-bar__category{
+		display: flex;
+	}
+}
+
+.submenu-bar1{
+    @media (min-width: $sm) {
+		display: none;
+	}	
+    
+     @media (max-width: $sm-1) {
+		width: 100%;
+        height: 0%;
+        transition: all 1s ease;
+        overflow: hidden;
+         
+        .submenu-bar__category{
+            display: none;
+        }
+	} 
+}
+
+.submenu-bar--in1{
+	width: 100%;
+	height: auto;
+	background-color: $submenu-color;
+	
+	.submenu-bar__category{
+		display: flex;
+	}
+}
+
+
+.submenu-bar__category{
+	justify-content: center;
+	padding: 27px;
+	transition: all .5s;
+	
+	&:not(:last-child){
+		border-bottom: 1px solid #49657e;
+	}
+	
+	&:hover{
+		background-color: $submenu-hover;
+	}
+	
+	@media (min-width: $sm) and (max-width: $md-1){
+		padding: 29px 20px;
+	}
+    
+    @media (max-width: $sm-1) {
+        justify-content: center;
+        padding: 9px;
+        transition: all .5s;
+        align-items: center;
+
+        &:not(:last-child){
+            border-bottom: 1px solid #49657e;
+        }
+
+        &:hover{
+            background-color: $submenu-hover;
+        }
+    }
+}
+
+.submenu-bar-row{
+    justify-content: space-between;
+	margin-bottom: 4px;
+	text-decoration: none;
+	align-items: center;
+	margin-right: 0px;
+	transition: all .5s ease;
+
+	&:hover{
+		.submenu-bar__icon{
+			margin-right: -5px;
+			transition: all .5s ease;
+		}
+	}
+}
+
+.submenu-bar__title{
+	color: $aqua;
+	font-size: 16px;
+	
+	@media (min-width: $sm) and (max-width: $md-1){
+		font-size: 15px;
+	}
+    
+    @media (max-width: $sm-1) {
+        color: $aqua;
+        font-size: 15px;
+        text-decoration: none;
+    }
+	
+}
+
+.submenu-bar__icon{
+	color: $aqua;
+	font-size: 20px;
+	
+	@media (min-width: $sm) and (max-width: $md-1){
+		font-size: 18px;
+	}
+    
+    @media (max-width: $sm-1) {
+        display: none;
+    }
+}
+
+.submenu-bar__subtitle{
+	color: $white;
+	font-size: 15px;
+	font-weight: 100;
+	margin-top: 10px;
+	text-decoration: none;
+	min-width: 190px;
+	
+	&:hover{
+		color: $aqua;
+	}
+	
+	@media (min-width: $sm) and (max-width: $md-1){
+		min-width: 145px;
+		font-size: 14px;
+	}
+    
+    @media (max-width: $sm-1) {
+        color: $white;
+        font-size: 14px;
+        font-weight: 100;
+        margin-top: 3px;
+        text-decoration: none;
+        min-width: inherit;
+    }
+}
+
+
+

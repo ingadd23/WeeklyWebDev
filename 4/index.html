@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Weekly WebDev 4</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="zadanie 4 weekly webdev">
+	<meta name="keywords" content="">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+
+</head>
+<body class="container">
+	
+	
+	<nav id="slide-nav" class="slide-nav">
+
+	</nav>
+	
+	
+	<main id="panel" class="panel">
+		<header class="flex-row header">
+			<button id="nav-button" type="button" class="flex-column nav-button ">
+				  <span class="nav-button__span"></span>
+				  <span class="nav-button__span"></span>
+				  <span class="nav-button__span"></span>
+			</button>
+			
+			<div id="nav" class="nav nav--in">
+				<ul class="flex-row nav-ul nav-list__ul">
+					<li class="nav-list__li nav-list__li--active"><a class="nav-list__a" href="#home">home</a></li>
+					<li class="nav-list__li"><a class="nav-list__a" href="#store">store</a></li>
+					<li class="nav-list__li"><a class="nav-list__a" href="#blog">blog</a></li>
+					<li class="nav-list__li"><a class="nav-list__a" href="#about">about</a></li>
+					<li class="nav-list__li"><a class="nav-list__a" href="#contact">contact</a></li>
+				</ul>
+
+				<ul class="flex-row nav-ul nav-icon__ul">
+					<form action="#" method="post" class="flex-row nav-icon__li search-form">
+						<input type="text" class="search-input">
+						<span class="nav-icon__a nav-icon__a--search search-button" href="#"><i class="icon-search"></i></span>
+					</form>
+					<li class="nav-icon__li">
+						<a class="nav-icon__a nav-icon__a--facebook" href="#"><i class="icon-facebook"></i></a>
+					</li>
+					<li class="nav-icon__li">
+						<a class="nav-icon__a nav-icon__a--twitter" href="#"><i class="icon-twitter"></i></a>
+					</li>
+					<li class="nav-icon__li">
+						<a class="nav-icon__a nav-icon__a--gplus" href="#"><i class="icon-gplus"></i></a>
+					</li>
+					<li class="nav-icon__li">
+						<a class="nav-icon__a nav-icon__a--user" href="#"><i class="icon-user"></i></a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		
+		<div class="flex-row sm-flex-column">
+		    <section class="flex-column menu-bar">
+		        <ul class="menu-bar-ul">
+					<a href="#" class="menu-bar__a">
+						<li class="menu-bar__li menu-bar__li--active">
+							<i class="menu-bar__icon icon-home"></i>
+							<span class="menu-bar__span">Home</span>  
+						</li>
+					</a> 
+					<a href="#" class="menu-bar__a">
+						<li class="menu-bar__li">
+							<i class="menu-bar__icon icon-basket"></i>
+							<span class="menu-bar__span">Store</span> 
+						</li>
+					</a> 
+					<a href="#" class="menu-bar__a">
+						<li id="blog-toggle" class="menu-bar__li">
+							<i class="menu-bar__icon icon-edit"></i>
+							<span class="menu-bar__span">Blog</span> 
+							<i id="menu-bar__icon--double-right" class="menu-bar__icon menu-bar__icon--double-right icon-angle-double-right"></i> 
+						</li>
+					</a> 
+                        
+                    <section id="submenu-bar1" class="submenu-bar1">
+                       
+                    </section>    
+                        	
+					<a href="#" class="menu-bar__a">
+						<li class="menu-bar__li">
+							<i class="menu-bar__icon icon-group"></i>
+							<span class="menu-bar__span">Community</span> 
+						</li>
+					</a> 
+					<a href="#" class="menu-bar__a">
+						<li class="menu-bar__li">
+							<i class="menu-bar__icon icon-trophy"></i>
+							<span class="menu-bar__span">Contest</span>
+						</li>
+					</a> 
+					<a href="#" class="menu-bar__a">
+						<li class="menu-bar__li">
+							<i class="menu-bar__icon icon-info-circled"></i>
+							<span class="menu-bar__span">About</span>
+						</li>
+					</a> 
+					<a href="#" class="menu-bar__a">
+						<li class="menu-bar__li">
+							<i class="menu-bar__icon icon-mail"></i>
+							<span class="menu-bar__span">Contact</span>  
+						</li>
+					</a> 
+				</ul>
+				
+				<ul class="menu-contact-ul">
+					<li class="menu-contact__li">
+						<i class="menu-contact__icon icon-phone"></i>
+						<span class="menu-contact__span">(912) 555-1234 <br/> (912) 555-5678</span>  
+					</li>
+					
+					<li class="menu-contact__li">
+						<i class="menu-contact__icon icon-location"></i>
+						<span class="menu-contact__span">1600 Pennsylvania <br/> Ave NW, Washington <br/>DC 20500, USA</span>  
+					</li>
+					
+					<li class="menu-contact__li">
+						<i class="menu-contact__icon icon-mail"></i>
+						<span class="menu-contact__span">hello@website.com <br/> office@website.com</span>  
+					</li>
+					
+				</ul>
+		    </section>
+		    
+		    <section id="submenu-bar" class=" submenu-bar">
+				<div class="flex-column submenu-bar__category">
+				
+					<a href="#" class="flex-row submenu-bar-row">
+						<span class="submenu-bar__title">Tech</span>
+						<i class="submenu-bar__icon icon-angle-circled-right"></i>
+					</a>
+						
+					<a href="#" class="submenu-bar__subtitle">Software &amp; Apps</a>
+					<a href="#" class="submenu-bar__subtitle">Gadgets</a>
+					<a href="#" class="submenu-bar__subtitle">Mobile</a>
+				</div>
+				
+				<div class="flex-column submenu-bar__category">
+				
+					<a href="#" class="flex-row submenu-bar-row">
+						<span class="submenu-bar__title">Entertainment</span>
+						<i class="submenu-bar__icon icon-angle-circled-right"></i>
+					</a>
+						
+					<a href="#" class="submenu-bar__subtitle">Film</a>
+					<a href="#" class="submenu-bar__subtitle">Gaming</a>
+					<a href="#" class="submenu-bar__subtitle">Music</a>
+					<a href="#" class="submenu-bar__subtitle">Sport</a>
+				</div>
+				
+				<div class="flex-column submenu-bar__category">
+				
+					<a href="#" class="flex-row submenu-bar-row">
+						<span class="submenu-bar__title">Business</span>
+						<i class="submenu-bar__icon icon-angle-circled-right"></i>
+					</a>
+						
+					<a href="#" class="submenu-bar__subtitle">Jobs</a>
+					<a href="#" class="submenu-bar__subtitle">Marketing</a>
+					<a href="#" class="submenu-bar__subtitle">Media</a>
+				</div>
+				
+				<div class="flex-column submenu-bar__category">
+				
+					<a href="#" class="flex-row submenu-bar-row">
+						<span class="submenu-bar__title">Lifestyle</span>
+						<i class="submenu-bar__icon icon-angle-circled-right"></i>
+					</a>
+						
+					<a href="#" class="submenu-bar__subtitle">Home</a>
+					<a href="#" class="submenu-bar__subtitle">Health &amp; Fitmess</a>
+					<a href="#" class="submenu-bar__subtitle">Travel &amp; Leisure</a>
+				</div>
+			</section>
+			
+		    <div id="menu-right" class="flex-column menu-right">
+				<div class="flex-row sm-flex-column">
+					<div class="social-menu">
+						<ul class="social-menu-ul">
+							<a href="#" class="social-menu__a">
+								<li class="social-menu__li social-menu__li--facebook">
+									<i class="social-menu__icon icon-facebook"></i>
+									<span class="social-menu__span">Facebook</span>  
+								</li>
+							</a> 
+							
+							<a href="#" class="social-menu__a">
+								<li class="social-menu__li social-menu__li--twitter">
+									<i class="social-menu__icon icon-twitter"></i>
+									<span class="social-menu__span">Twitter</span>  
+								</li>
+							</a> 
+							
+							<a href="#" class="social-menu__a">
+								<li class="social-menu__li social-menu__li--gplus">
+									<i class="social-menu__icon icon-gplus"></i>
+									<span class="social-menu__span">Google +</span>  
+								</li>
+							</a> 
+							
+							<a href="#" class="social-menu__a">
+								<li class="social-menu__li social-menu__li--rss">
+									<i class="social-menu__icon icon-rss"></i>
+									<span class="social-menu__span">Rss Feeds</span>  
+								</li>
+							</a> 
+							
+							<a href="#" class="social-menu__a">
+								<li class="social-menu__li social-menu__li--pinterest">
+									<i class="social-menu__icon icon-pinterest"></i>
+									<span class="social-menu__span">Pinterest</span>  
+								</li>
+							</a> 
+						</ul>
+					</div>
+					
+					<div class="flex-column header-widget">
+					
+						<div class="flex-column facebook-widget">
+							<i class="widget__icon icon-facebook"></i>
+							<div class="flex-row widget-row">
+								<span id="widget__number--facebook" class="widget__number"></span>
+								<div id="follow-fb" class="flex-row widget__follow ">
+									<span  class="follow"></span>
+									<i class="widget__icon--follow icon-plus-1"></i>
+								</div>
+							</div>
+						</div>
+						
+						<div class="flex-column twitter-widget">
+							<i class="widget__icon icon-twitter"></i>
+							<div class="flex-row widget-row">
+								<span id="widget__number--twitter" class="widget__number"></span>
+								<div id="follow-twitter" class="flex-row widget__follow widget__follow-yes">
+									<span  class="following"></span>
+									<i class="widget__icon--following icon-ok-circle"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="flex-column sign-in">
+					<sapn class="sign-in__title">Sign In</sapn>
+					<sapn class="sign-in__subtitle">Just select your favorite social network to get started</sapn>
+					<div class="flex-row">
+						<i class="sign-in__icon icon-facebook"></i>
+						<i class="sign-in__icon icon-twitter"></i>
+						<i class="sign-in__icon icon-gplus"></i>
+						<i class="sign-in__icon icon-linkedin"></i>
+					</div>
+				</div>
+				<div class="flex-column newsletter">
+					<sapn class="newsletter__title">Join the Newsletter</sapn>
+					<sapn class="newsletter__subtitle">Sign up for our personalized daily newsletter</sapn>
+					
+						<form action="#" method="post" class="sign-up-form flex-row">
+						
+							<input type="text" id="sign-up-input" class="sign-up-input" placeholder="Enter email address" required="required">
+
+							<button type="submit" class="sign-up-button">sign up</button>
+
+						</form>
+				</div>
+			</div>
+		</div>
+		
+        <div class="slider">
+            <div class="slider-img slider-animation">
+                <img class=" " src="images/slider-1.jpg" style="width:100%">
+                <div class="slider-container">
+                    <h3 class="slider__title">Featured Story</h3>
+                    <p class="slider__subtitle">Now that the holiday gift-giving time is over, we're <br/>
+                        sure many of our readers unwrapped some new consoles. <br/>
+                        Despite its long life on the market...</p>
+                    <a href="#" class="slider-button hidden-sm">view more</a>
+                    <a href="#" class="slider-button visible-sm">featured story</a>
+
+                </div>
+            </div>
+
+            <img class="slider-img slider-animation" src="images/slider-2.jpg" style="width:100%">
+            <img class="slider-img slider-animation" src="images/slider-3.jpg" style="width:100%">
+            <img class="slider-img slider-animation" src="images/slider-4.jpg" style="width:100%">
+
+            <div class="slider-arrows">
+                <div class="slider-arrow slider-arrow__left icon-left-open" onclick="plusDivsSlider(-1)"></div>
+                <div class="slider-arrow slider-arrow__right icon-right-open" onclick="plusDivsSlider(1)"></div>            
+            </div>
+
+            <div class="slider-indicators">
+                <span class="slider-indicator slider-indicator__active" onclick="currentDivSlider(1)"></span>
+                <span class="slider-indicator" onclick="currentDivSlider(2)"></span>
+                <span class="slider-indicator" onclick="currentDivSlider(3)"></span>
+                <span class="slider-indicator" onclick="currentDivSlider(4)"></span>
+            </div>
+        </div>
+        
+        <div  class="flex-row sm-flex-column video-container">
+            <section class="flex-row video-section">
+                <i class="video-section__icon icon-videocam"></i>
+                <div class="flex-column video-section__text">
+                    <h2 class="video__title">Best story you have ever heard</h2>
+                    <p class="video__time"> 24 minutes ago</p>
+                    <p id="video__text" class="video__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry’s type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                    
+                </div>
+            </section>
+            
+            <div class="flex-column video-buttons">
+                <a href="#" class="flex-column video-button">
+                    <i class="video-button__icon icon-heart-empty"></i>
+                    <p class="video-button__figcaption">Like</p>
+                </a>
+                
+                <a href="#" class="flex-column video-button">
+                    <i class="video-button__icon icon-clock"></i>
+                    <p class="video-button__figcaption">Later</p> 
+                </a>
+                
+                <a href="#" class="flex-column video-button">
+                    <i class="video-button__icon icon-export"></i>
+                    <p class="video-button__figcaption">Share</p>
+                </a>
+            </div>
+            
+            <iframe class="video"
+                src="https://www.youtube.com/embed/JGwWNGJdvx8?rel=0&amp;showinfo=0"
+                frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
+        
+        <div class="flex-row sm-flex-column photo-container">
+            <div class="flex-row photo-buttons">
+               <a href="#" class="flex-column photo-button">
+                    <i class="photo-button__icon icon-export"></i>
+                    <p class="photo-button__figcaption">1,325</p>
+                </a>
+                
+                <a href="#" class="flex-column photo-button">
+                    <i class="photo-button__icon icon-heart"></i>
+                    <p class="photo-button__figcaption">682</p>
+                </a>
+            </div>
+            
+            <section class="flex-row photo-section">
+                <i class="photo-section__icon icon-camera"></i>
+                <div class="flex-column photo-section__text">
+                    <h2 class="photo__title">Here's What Instagram Ads Will Look Like</h2>
+                    <p class="photo__time"> 3 hours ago</p>
+                    <p id="photo__text" class="photo__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry’s type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                </div>
+            </section>
+            <div class="photo"></div>
+        </div>
+        
+        <div class="flex-row bottom-section">
+            <div class="flex-column bottom-section__left">
+                <div class="flex-colum twitter-section">
+                    <div class="flex-row twitter-section__names">
+                        <p class="twitter-section__name"><span class="span-bold">Alex White </span> @alexwhite</p>
+                        <i class="twitter-section__icon icon-ok-circle"></i>
+                    </div>
+                    
+                    <div class="twitter-posts">
+                        <p class="twitter__post">Singolo is a free PSD template of a flat, single page website 
+                        created <span class="span-bold">by @PsdChat #freebie #psd <a href="#" class="twitter__post--a">http://bit.ly/19XM8Lj</a></span></p>
+                        <p class="twitter__time">2 hours ago</p>
+                    </div>
+                    
+                    <div class="twitter-posts">
+                        <p class="twitter__post">Saturday Career Workshops are back at ADC! See what high 
+                        school students created this week: <a href="#" class="span-bold twitter__post--a">http://bit.ly/Xx1EsL</a></p>
+                        <p class="twitter__time">6 hours ago</p>
+                    </div>
+                </div>
+                
+                <div class="news">
+                    <h4 class="news-main-title">What`s Hot</h4> 
+                    <div class="news-bg news-bg__animation">
+                       <div class="flex-row news-container">
+                           <img src="images/img-small-1.jpg" alt="" class="news__img">
+                           <div class="flex-column news-text">
+                               <a href="#" class="news__title">A New Yorker doesn't necessarily come from...</a>
+                               <p class="news__time">3 minutes ago</p>
+                           </div>
+                       </div>
+                       
+                       <div class="flex-row news-container">
+                           <img src="images/img-small-2.jpg" alt="" class="news__img">
+                           <div class="flex-column news-text">
+                               <a href="#" class="news__title">A New Yorker never looks up...</a>
+                               <p class="news__time">7 hours ago</p>
+                           </div>
+                       </div>
+                       
+                       <div class="flex-row news-container">
+                           <img src="images/img-small-3.jpg" alt="" class="news__img">
+                           <div class="flex-column news-text">
+                               <a href="#" class="news__title">A New Yorker doesn’t take cabs</a>
+                               <p class="news__time">23 hours ago</p>
+                           </div>
+                       </div>
+                       
+                       <div class="flex-row news-container">
+                           <img src="images/img-small-4.jpg" alt="" class="news__img">
+                           <div class="flex-column news-text">
+                               <a href="#" class="news__title">A New Yorker views celebrities as regular...</a>
+                               <p class="news__time">1 day ago</p>
+                           </div>
+                       </div>
+                       
+                       <div class="flex-row news-container">
+                           <img src="images/img-small-5.jpg" alt="" class="news__img">
+                           <div class="flex-column news-text">
+                               <a href="#"class="news__title">A New Yorker never looks up...</a>
+                               <p class="news__time">2 days ago</p>
+                           </div>
+                       </div>
+                    </div>
+                    
+                    <div class="news-bg news-bg__animation">
+                       <div class="flex-row news-container">
+                           <img src="images/img-small-5.jpg" alt="" class="news__img">
+                           <div class="flex-column news-text">
+                               <a href="#"class="news__title">A New Yorker never looks up...</a>
+                               <p class="news__time">2 days ago</p>
+                           </div>
+                       </div>
+                       
+                       <div class="flex-row news-container">
+                           <img src="images/img-small-3.jpg" alt="" class="news__img">
+                           <div class="flex-column news-text">
+                               <a href="#" class="news__title">A New Yorker doesn’t take cabs</a>
+                               <p class="news__time">3 days ago</p>
+                           </div>
+                       </div>
+                       
+                       <div class="flex-row news-container">
+                           <img src="images/img-small-1.jpg" alt="" class="news__img">
+                           <div class="flex-column news-text">
+                               <a href="#" class="news__title">A New Yorker doesn't necessarily come from...</a>
+                               <p class="news__time">3 days ago</p>
+                           </div>
+                       </div>
+                      
+                           <div class="flex-row news-container">
+                           <img src="images/img-small-4.jpg" alt="" class="news__img">
+                           <div class="flex-column news-text">
+                               <a href="#" class="news__title">A New Yorker views celebrities as regular...</a>
+                               <p class="news__time">3 days ago</p>
+                           </div>
+                       </div>
+                       
+                       <div class="flex-row news-container">
+                           <img src="images/img-small-2.jpg" alt="" class="news__img">
+                           <div class="flex-column news-text">
+                               <a href="#" class="news__title">A New Yorker never looks up...</a>
+                               <p class="news__time">4 days ago</p>
+                           </div>
+                       </div>
+                    </div>
+                    
+                    <div class="news-bg news-bg__animation">
+                       <div class="flex-row news-container">
+                           <img src="images/img-small-3.jpg" alt="" class="news__img">
+                           <div class="flex-column news-text">
+                               <a href="#" class="news__title">A New Yorker doesn’t take cabs</a>
+                               <p class="news__time">5 days ago</p>
+                           </div>
+                       </div>
+                       
+                       <div class="flex-row news-container">
+                           <img src="images/img-small-4.jpg" alt="" class="news__img">
+                           <div class="flex-column news-text">
+                               <a href="#" class="news__title">A New Yorker views celebrities as regular...</a>
+                               <p class="news__time">7 days ago</p>
+                           </div>
+                       </div>       
+                       
+                       <div class="flex-row news-container">
+                           <img src="images/img-small-2.jpg" alt="" class="news__img">
+                           <div class="flex-column news-text">
+                               <a href="#" class="news__title">A New Yorker never looks up...</a>
+                               <p class="news__time">10 days ago</p>
+                           </div>
+                       </div>
+ 
+                       <div class="flex-row news-container">
+                           <img src="images/img-small-5.jpg" alt="" class="news__img">
+                           <div class="flex-column news-text">
+                               <a href="#"class="news__title">A New Yorker never looks up...</a>
+                               <p class="news__time">11 days ago</p>
+                           </div>
+                       </div>
+                       
+                          <div class="flex-row news-container">
+                           <img src="images/img-small-1.jpg" alt="" class="news__img">
+                           <div class="flex-column news-text">
+                               <a href="#" class="news__title">A New Yorker doesn't necessarily come from...</a>
+                               <p class="news__time">14 days ago</p>
+                           </div>
+                       </div>
+                    </div>
+                    
+                    <div class="news-indicators">
+                        <span class="news-indicator news-indicator__active" onclick="currentDivNews(1)"></span>
+                        <span class="news-indicator" onclick="currentDivNews(2)"></span>
+                        <span class="news-indicator" onclick="currentDivNews(3)"></span>
+                    </div>
+                </div>
+                
+                <div class="flex-column mail">
+                    <h4 class="mail__title">Ask a Question</h4>
+                    
+                    <form method="post" name="mailForm" action="" class="mail-form">
+                        <input type="text" class="mail-input" name="name" id="name" required="required" placeholder="Your name">
+                        <input type="email" class="mail-input" name="email" id="email" required="required" placeholder="Your email">
+                        <textarea name="message" id="message" cols="30" rows="10" class="mail-textarea" required="required" placeholder="Your question..."></textarea>
+                        <button type="submit" class="mail-button">submit</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="flex-column bottom-section__right">
+                <div class="flex-row sm-flex-column">
+                    <div class="calendar">
+                        <p class="calendar__title">calendar</p>
+                    </div>
+                    
+                    <a href="#" class="flex-column view-more-stories">
+                        <p class="view-more-stories__title">view more stories</p>
+                        <i class="view-more-stories__icon icon-angle-circled-right"></i>
+                    </a>
+                </div>
+                
+                <div class="post-photo"></div>
+                
+                <section class="flex-row post-section">
+                    <i class="post-section__icon icon-doc-text-inv"></i>
+                    <div class="flex-column post-section__text">
+                        <h2 class="post__title">What is Lorem Ipsum?</h2>
+                        <p id="post__text" class="post__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. </p>
+                        
+                         <div class="flex-row post-actions">
+                            <a href="#" class="flex-row post-action">
+                                <i class="post-action__icon icon-export"></i>
+                                <p class="post-action__number">569 Shares</p>
+                            </a>
+                            
+                            <a href="#" class="flex-row post-action">
+                                <i class="post-action__icon icon-eye"></i>
+                                <p class="post-action__number">3,152 Views</p>
+                            </a>
+                            
+                            <a href="#" class="flex-row post-action">
+                                <i class="post-action__icon icon-chat"></i>
+                                <p class="post-action__number">21 Comments</p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="flex-row quote-section">
+                    <i class="quote-section__icon icon-quote-right"></i>
+                    <p class="flex-column quote-section__text">
+                        “ If you don’t like something change it. If you can’t change it, change the way you think about it ”
+                    </p>
+                </section>
+                
+                
+                <div class="flex-column tab-container">
+                    <div class="flex-row tabs">
+                        <button class="tab" onclick="openTab(event, 'about')">About</button>
+                        <button class="tab" onclick="openTab(event, 'team')" id="tabOpen">Team</button>
+                        <button class="tab" onclick="openTab(event, 'privacy')">Privacy</button>
+                        <button class="tab" onclick="openTab(event, 'advertise')">Advertise</button>
+                        <button class="tab" onclick="openTab(event, 'contact')">Contact</button>
+                    </div>
+                    
+                    <div id="about" class="tab-content">
+                        <p class="about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/><br/> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+
+                    <div id="team" class="tab-content">
+                        <div class="flex-row team-container">
+                            <div class="flex-column team-member">
+                                <div class="flex-row member-section">
+                                    <img src="images/member-1.jpg" alt="" class="member__img">
+                                    <div class="flex-column member-name-section">
+                                        <h4 class="member__name">Anne Hathaway</h4>
+                                        <p class="member__position">CEO/Founder</p>
+                                    </div>
+                                </div>
+                                <p class="team__text">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has...”</p>
+                                <a href="#" class="team__link">@annehathaway</a>
+                            </div>
+                            
+                            <div class="flex-column team-member">
+                                <div class="flex-row member-section">
+                                    <img src="images/member-2.jpg" alt="" class="member__img">
+                                    <div class="flex-column member-name-section">
+                                        <h4 class="member__name">Kate Upton</h4>
+                                        <p class="member__position">Co-Founder</p>
+                                    </div>
+                                </div>
+                                <p class="team__text">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has...”</p>
+                                <a href="#" class="team__link">@kateupton</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="privacy" class="tab-content">
+                        <p class="privacy__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/><br/> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                    
+                    <div id="advertise" class="tab-content">
+                        <p class="advertise__text">Lorem Ipsum is simply typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/><br/> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </div>
+                    
+                    <div id="contact" class="tab-content">
+                        <p class="contact__name">Lorem ipsum</p>
+                        <p class="contact__text">
+                            Street, City, Country<br/>
+                            123 City name<br/>
+                            lorem@ipsum.com<br/>
+                            034 345 5445
+                            
+                        </p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+	</main>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+	<script src="js/javascript.min.js"></script>
+	
+</body>
+</html>
+
+
+

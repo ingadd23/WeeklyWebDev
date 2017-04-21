@@ -1,0 +1,152 @@
+.tab-container{
+    margin-top: $block-margin;
+}
+
+.tabs{
+    justify-content: space-between;
+}
+
+.tab{
+    background-color: $grey-lighten;
+    height: 45px;
+    width: 121px;
+    font-size: 16px;
+    color: $white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s ease;
+    
+    @media (max-width: $sm-1) {
+		font-size: 14px;
+	}
+}
+
+.tab--active{
+    background-color: $white;
+    color: $grey-darken;
+    
+}
+
+
+
+.tab-content{
+    background: $white;
+    padding: 40px 30px 30px 30px;
+    height: 263px;
+    box-sizing: border-box;
+    
+    @media (max-width: $sm-1) {
+	    height: inherit;	
+        padding: 40px 20px 0px 20px;
+	}
+}
+
+
+.about__text{
+   
+    margin: 0;
+    font-size: 15px;
+    line-height: 22px;
+    color: $grey-darken;
+    font-weight: 300;
+    padding: 0;
+    
+    @media (max-width: $sm-1) {
+		font-size: 14px;
+        padding-bottom: 30px;
+	}
+}
+
+
+.team-container{
+    justify-content: space-between;
+    
+    @media (max-width: $sm-1) {
+		flex-direction: column;
+	}
+}
+
+.team-member{
+    width: 250px;
+    
+    @media (max-width: $sm-1) {
+		width: inherit;
+        margin-bottom: 35px;
+	}
+}
+
+.member__img{
+    width: 55px;
+    height: 55px;
+}
+
+.member-name-section{
+    justify-content: space-between;
+    padding-left: 25px;
+}
+
+.member__name{
+    margin: 0;   
+    font-size: 18px;
+    line-height: 24px;
+    color: $grey-darken;
+    font-weight: 500;
+    
+    @media (max-width: $sm-1) {
+		font-size: 17px;
+	}
+}
+
+.member__position{
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: $grey2;
+    font-weight: 300;
+}
+
+.team__text{
+    @extend .about__text;
+    padding: 30px 0px 20px 0px;
+    
+    @media (max-width: $sm-1) {
+		padding: 15px 0px 10px 0px;
+	}
+    
+}
+
+.team__link{
+    margin: 0;
+    font-size: 15px;
+    line-height: 22px;
+    color: $twitter-blue;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.privacy__text{
+    @extend .about__text;
+}
+
+.advertise__text{
+    @extend .about__text;
+}
+
+.contact__name{
+    @extend .about__text;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    
+    @media (max-width: $sm-1) {
+		margin-top: 0px;
+        margin-bottom: 0px;
+	}
+}
+
+.contact__text{
+    @extend .about__text;
+    text-align: center;
+}

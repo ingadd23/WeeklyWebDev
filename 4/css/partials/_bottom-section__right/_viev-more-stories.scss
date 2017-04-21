@@ -1,0 +1,52 @@
+.view-more-stories{
+    width: 50%;
+    height: 300px;
+    background-color: $google-red;
+    text-decoration: none;
+    padding: 60px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    
+    &:hover{
+        .view-more-stories__icon{
+            margin-left: 60%;
+            transition: all .5s ease;
+        }
+    }
+    
+    @media (max-width: $sm-1) {
+		width: 100%;
+        height: 200px;
+        padding: 30px 60px;
+        margin-top: 15px;
+	}
+    
+}
+
+.view-more-stories__title{
+    font-size: 36px;
+    line-height: 45px;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0;
+    
+    @media (max-width: $sm-1) {
+		font-size: 30px;
+        text-align: center;
+	}
+    
+}
+
+.view-more-stories__icon{
+    font-size: 35px;
+    color: $white;
+    transition: all .5s ease;
+    margin-left: 0px;
+    
+    @media (max-width: $sm-1) {
+		font-size: 30px;
+        width: 100%;
+        text-align: center;
+	}
+}

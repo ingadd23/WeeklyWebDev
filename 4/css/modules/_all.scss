@@ -1,0 +1,130 @@
+body{
+	background-color: $background-color;
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+  	height: 100%;
+	transition: all .5s ease;
+	font-weight: 400;
+	
+	@media (min-width: $sm-1) {
+		margin-top: 50px;
+        margin-bottom: 50px;
+	}
+	
+	@media (min-width: $sm) and (max-width: $md-1){
+		margin-top: 15px;
+	}
+}
+
+.container{
+	width: 928px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	
+	@media (min-width: $sm) and (max-width: $md-1){
+		min-width: 720px;
+		width: auto;
+	}
+	
+	@media (max-width: $sm-1) {
+		width: auto;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+
+.flex-row{
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-column{
+	display: flex;
+	flex-direction: column;
+}
+
+.sm-flex-column{
+	@media (max-width: $sm-1) {
+		flex-direction: column !important;
+	}
+}
+
+.hidden-sm{
+    @media (min-width: $sm) {
+        display: block;
+    }
+    
+    @media (max-width: $sm-1) {
+        display: none;
+    }
+}
+
+.visible-sm{
+    @media (min-width: $sm) {
+        display: none;
+    }
+    
+    @media (max-width: $sm-1) {
+        display: block;
+    }
+}
+	
+.menu-right{
+	width: 75%;
+	margin-left: 15px;
+	
+	@media (max-width: $sm-1) {
+		width: 100%;
+		margin-left: 0px;
+	}
+}
+
+.video-container{
+    margin-top: $block-margin;
+    justify-content: space-between;
+    background-color: #000;
+    
+    @media (max-width: $sm-1) {
+		margin-top: 0px;
+	} 
+}
+
+.photo-container{
+    margin-top: $block-margin;
+    justify-content: space-between;
+    
+    @media (max-width: $sm-1) {
+		//margin-top: 0px;
+	} 
+}
+
+.bottom-section{
+    margin-top: $block-margin;
+    
+    @media (max-width: $sm-1) {
+		flex-direction: column;
+	}
+}
+
+.bottom-section__left{
+    width: 33%;
+    margin-right: $block-margin;
+    
+    @media (max-width: $sm-1) {
+		flex-direction: column;
+        width: 100%;
+	}
+}
+
+.bottom-section__right{
+    width: 66%;
+    
+    @media (max-width: $sm-1) {
+		flex-direction: column;
+        width: 100%;
+	}
+}
+	

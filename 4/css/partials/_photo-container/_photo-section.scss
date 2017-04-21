@@ -1,0 +1,39 @@
+.photo-section{
+    @extend .video-section;
+
+    
+    @media (min-width: $sm) {
+		width: 33%;
+	}
+    
+    @media (max-width: $sm-1) {
+		order: 1;
+	}
+}
+
+.photo-section__icon{
+    @extend .video-section__icon;
+    background-color: $twitter-blue;
+    padding: 10px 12px 0px 8px;
+}
+
+.photo-section__text{
+    @extend .video-section__text;
+}
+
+.photo__title{
+    @extend .video__title;
+    
+}
+
+.photo__time{
+    @extend .video__time;
+}
+
+.photo__text{
+    @extend .video__text;
+    
+}
+
+
+

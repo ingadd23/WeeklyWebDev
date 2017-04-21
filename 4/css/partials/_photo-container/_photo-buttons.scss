@@ -1,0 +1,66 @@
+.photo-buttons{
+    width: 33%;
+    background-color: $submenu-color;
+    justify-content: center;
+    margin-right: $block-margin;
+    align-items: center;
+    
+    
+    @media (max-width: $sm-1) {
+		flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        order: 2;
+	}
+}
+
+.photo-button{
+    align-items: center;
+    text-decoration: none;
+    padding: 20px;
+    width: 45px;
+   
+    
+    .icon-heart{
+        color: $google-red;
+    }
+    
+    &:hover{
+        @media (min-width: $md) {
+            .photo-button__icon{ 
+                font-size: 45px;        
+            }
+        }
+     
+    }
+    
+    @media (max-width: $sm-1) {
+		padding: 10px;
+	}
+}
+
+
+.photo-button__icon{
+    color: $white;
+    font-size: 35px;
+    transition: all .3s ease;
+    
+    @media (max-width: $sm-1) {
+		font-size: 27px;
+        padding-top: 5px;  
+	}
+}
+
+.photo-button__figcaption{
+    color: $white;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    margin-bottom: 0px;
+    margin-top: 13px;
+    
+    @media (max-width: $sm-1) {
+		font-size: 14px; 
+        margin-top: 5px;
+	}
+}
