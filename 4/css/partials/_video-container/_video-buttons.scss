@@ -1,0 +1,48 @@
+.video-buttons{
+    width: 12%;
+    background-color: $submenu-color;
+    justify-content: space-between;
+    padding: 25px 0px;
+    
+    @media (max-width: $sm-1) {
+		flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        padding: 10px 0px;
+        
+	}
+}
+
+.video-button{
+    align-items: center;
+    text-decoration: none;
+    
+    
+    &:hover{
+        .video-button__icon{ color: $google-red; }
+    }
+}
+
+.video-button__icon{
+    color: $white;
+    font-size: 33px;
+    transition: color .3s ease;
+    
+    @media (max-width: $sm-1) {
+		font-size: 27px;
+        padding-top: 5px;  
+	}
+}
+
+.video-button__figcaption{
+    color: $white;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    
+    @media (max-width: $sm-1) {
+		font-size: 14px; 
+	}
+}

@@ -1,0 +1,85 @@
+.twitter-section{
+    background-color: $twitter-blue;
+    color: $white;
+    height: 32%;
+    
+     
+}
+
+.twitter-section__names{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0px 30px;
+    
+    @media (max-width: $sm-1) {
+		margin-top: 20px;
+        margin-bottom: 20px;
+	}
+}
+
+.span-bold{
+    font-weight: 500;
+}
+
+.twitter__post--a{
+    text-decoration: none;
+    color: $white;
+}
+
+.twitter-section__name{
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+    @media (max-width: $sm-1) {
+		font-size: 15px;
+	}
+}
+
+
+.twitter-section__icon{
+    font-size: 25px;
+    
+    @media (max-width: $sm-1) {
+		font-size: 22px;
+	}
+}
+
+.twitter-posts{
+   
+    border-top: 1px solid lighten($twitter-blue, 10% );
+    padding: 25px 30px;
+}
+.twitter__post{
+    font-size: 17px;
+    font-weight: 300; 
+    line-height: 22px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+    @media (min-width: $sm) and (max-width: $md-1){
+	    font-size: 14px;
+    }
+    
+    @media (max-width: $sm-1) {
+		font-size: 14px;
+	}
+}
+
+.twitter__time{
+    font-size: 16px;
+    font-weight: 300; 
+    margin-top: 15px;
+    margin-bottom: 0px;
+    
+    @media (min-width: $sm) and (max-width: $md-1){
+	    font-size: 14px;
+    }
+    
+    @media (max-width: $sm-1) {
+	    font-size: 14px;	
+	}
+}

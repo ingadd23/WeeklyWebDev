@@ -1,0 +1,32 @@
+.calendar{
+    width: 50%;
+    background-color: $submenu-color;
+    margin-right: $block-margin;
+    
+    @media (max-width: $sm-1) {
+		width: 100%;
+        height: 200px;
+        margin-top: 15px;
+	}
+}
+
+.calendar__title{
+    font-size: 36px;
+    line-height: 45px;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: auto;
+    margin-top: 30%;
+
+    
+    @media (max-width: $sm-1) {
+		font-size: 30px;
+        text-align: center;
+        margin-top: 20%;
+        
+	}
+    
+    
+}

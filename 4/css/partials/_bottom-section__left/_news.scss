@@ -1,0 +1,108 @@
+.news{
+    background-color: $white;
+    margin-top: $block-margin;
+    position: relative;
+    height: 40%;
+}
+
+.news-main-title{
+    @extend .mail__title;
+    border-bottom: 1px solid lighten($grey-darken, 60%);
+}
+
+.news-container{
+    //justify-content: space-between;
+    margin: 20px 20px 20px 20px;
+}
+
+.news__img{
+    width: 70px;
+    height: 70px;
+    
+    @media (max-width: $sm-1) {
+		width: 60px;
+        height: 60px;
+	}
+}
+
+.news-text{
+    margin-left: 15px;
+    justify-content: space-between;
+    width: calc(100% - 70px);
+}
+
+.news__title{
+    text-decoration: none;
+    font-size: 16px;
+    color: $grey-darken;
+    line-height: 20px;
+    font-weight: 500;
+    margin: 0;
+    transition: color .3s ease;
+    width: 100%;;
+    
+    &:hover{
+        color: $twitter-blue;
+    }
+    
+    @media (min-width: $sm) and (max-width: $md-1){
+	    font-size: 14px;
+    }
+    
+    @media (max-width: $sm-1) {
+		font-size: 14px;
+	}
+}
+
+.news__time{
+    font-size: 15px;
+    color: $grey2;
+    line-height: 20px;
+    font-weight: 300;
+    margin: 0;
+    
+    @media (min-width: $sm) and (max-width: $md-1){
+	    font: 14px;
+    }
+    
+    @media (max-width: $sm-1) {
+	    font-size: 14px;	
+	}
+}
+
+.news-indicators{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    @media (max-width: $sm-1) {
+		top: 15px;
+	}
+   
+}
+
+
+.news-indicator{
+    width: 10px;
+    height: 10px;
+    margin: 12px 3px;
+    border-radius: 50px;
+    border: 1px solid $grey2;
+    transition: all .2s ease;
+    
+    @media (max-width: $sm-1) {
+		width: 7px;
+        height: 7px;
+        margin: 12px 6px;
+	}
+    
+}
+
+.news-indicator__active, .news-indicator:hover{
+    cursor: pointer;
+    background-color: $grey2;
+    border: 1px solid $grey2;
+}
