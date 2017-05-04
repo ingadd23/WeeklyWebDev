@@ -1,0 +1,137 @@
+@mixin flexbox{
+      display: -webkit-box;           /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;              /* OLD - Firefox 19- (doesn't work very well) */
+      display: -ms-flexbox;           /* TWEENER - IE 10 */
+      display: -webkit-flex;          /* NEW - Chrome */
+      display: flex;  
+}
+
+@mixin flexbox__row{
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+@mixin flexbox__column {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+@mixin flexbox__justify--space-between {
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+@mixin flexbox__justify--center {
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@mixin flexbox__aligin-items--flex-start {
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+@mixin flexbox__aligin-items--flex-end {
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+@mixin flexbox__aligin-items--center {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@mixin flexbox__aligin-items--stretch {
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+
+@mixin flexbox__aligin-self--center{
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+@mixin transition($property, $delay, $timing){
+    -webkit-transition: $property $delay $timing;
+    -moz-transition: $property $delay $timing;
+    -o-transition: $property $delay $timing;
+    transition: $property $delay $timing;
+}
+
+@mixin transform__rotate($deg){
+    -webkit-transform: rotate($deg);
+    -moz-transform: rotate($deg);
+    -o-transform: rotate($deg);
+    transform: rotate($deg);
+}
+
+@mixin header-text{
+    font-size: 27px;
+    color: $green;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 80px;
+    
+    @media (max-width: 767px) {
+        padding-bottom: 40px;
+        font-size: 21px;
+    }
+}
+
+@mixin text{
+    font-size: 17px;
+    line-height: 23px;
+    color: $grey;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+    
+   @media (max-width: 767px) {
+        font-size: 14px;
+       text-align: justify;
+    }
+    
+}
+
+@mixin top-margin{
+    padding-top: 70px;
+    margin-top: -70px;
+    
+    @media (max-width: 767px) {
+        padding-top: 50px;
+        margin-top: -50px;
+    }
+}
+
+@mixin container-padding{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    
+    @media (max-width: 767px) {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+}
+
