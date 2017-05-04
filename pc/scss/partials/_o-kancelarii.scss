@@ -1,0 +1,19 @@
+.o-kancelarii{
+    @include top-margin;
+}
+
+.o-kancelarii-container{
+    @include container-padding;
+    @media (max-width: 767px) {
+        padding-bottom: 30px;
+    }
+}
+
+.o-kancelarii__header{
+    @include header-text;
+}
+
+.o-kancelarii__text{
+    @include text;
+}
+

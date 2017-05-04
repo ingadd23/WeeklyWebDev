@@ -1,0 +1,70 @@
+.paralax-container {
+    background-image: url('../images/bg_main.jpg');
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    //background-size: cover;
+    perspective: 1px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 700px;
+    width: 100%;
+    
+    @include transition(all, .3s, ease);
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+        height: 100vh;
+        background-size: cover;
+    }
+    
+    @media (max-width: 767px) {
+        height: 100vh;
+        background-size: cover;
+        background-position: top left;
+    }
+}
+
+.paralax__quote{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.paralax__quote--1{
+    top: 52%;
+    font-size: 32px;
+    font-weight: 500;
+    color: $green;
+    text-transform: uppercase;
+    
+    //@include transition(all, .3s, ease);
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 30px; 
+    }
+    
+     @media (max-width: 767px) {
+        top: 46%;
+        font-size: 21px;
+    }
+}
+
+
+.paralax__quote--2{
+    
+    top: 60%;
+    font-size: 21px;
+    font-weight: 300;
+    color: $grey;
+   // @include transition(all, .3s, ease);
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 18px;
+    }
+    
+     @media (max-width: 767px) {
+        top: 54%;
+        font-size: 14px;
+    }
+    
+}

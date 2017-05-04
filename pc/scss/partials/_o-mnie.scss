@@ -1,0 +1,105 @@
+.o-mnie{
+    @include top-margin;
+}
+
+.o-mnie-container{
+    @include container-padding;
+    @include transition(all, .3s, ease);
+    @include flexbox;
+    @include flexbox__row;
+    @include flexbox__justify--space-between;
+    @include flexbox__aligin-items--center;
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+        @include flexbox__column;
+    }
+    
+    @media (max-width: 767px) {
+        @include flexbox__column;
+    }
+}
+
+.o-mnie__header1{
+    font-size: 27px;
+    color: $green;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    margin: 0px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    
+    @media (max-width: 767px) {
+        padding-top: 30px;
+        padding-bottom: 0px;
+        font-size: 21px;
+    }
+}
+
+.o-mnie__img{
+    width: 25%;
+    height: 100%;
+    @include transition(all, .3s, ease);
+    
+    @media (min-width: 992px) and (max-width: 1199px) {
+        width: 40%;
+    }
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+        width: 40%
+    }
+    
+    @media (max-width: 767px) {
+        width: 60%;
+    }
+}
+
+.o-mnie-article{
+    width: 75%;
+    margin-left: 30px;
+    @include transition(all, .3s, ease);
+        
+    @include flexbox;
+    @include flexbox__column;
+    @include flexbox__justify--center;
+    @include flexbox__aligin-items--center;
+    
+    @media (min-width: 992px) and (max-width: 1199px) {
+        width: 60%;
+    }
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+    
+    @media (max-width: 767px) {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+}
+
+.o-mnie__header{
+    font-size: 23px;
+    color: $green;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px 0px 20px 0px;
+    
+    @media (max-width: 767px) {
+        padding-bottom: 40px;
+        font-size: 21px;
+    }
+}
+
+.o-mnie__text{
+    width: 100%;
+    @include text;
+}
+
+
+
