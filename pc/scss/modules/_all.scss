@@ -56,8 +56,6 @@ body{
     @include transition(all, .3s, ease);
 }
 
-//@-ms-viewport{width:auto!important}
-
 
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
@@ -103,5 +101,14 @@ body{
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+.form-success{
+    color: $white;
+    font-size: 17px;
+    
+    @media (max-width: 767px) {
+        font-size: 14px;
     }
 }
