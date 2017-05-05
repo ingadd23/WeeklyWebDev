@@ -121,7 +121,7 @@ function initMap() {
     var infowindow = new google.maps.InfoWindow({
         content: contentString
     });
-
+    infowindow.open(map, marker);
     marker.addListener('click', function () {
         infowindow.open(map, marker);
     });

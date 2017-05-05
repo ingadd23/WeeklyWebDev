@@ -607,6 +607,13 @@ body {
   100% {
     transform: rotate(360deg); } }
 
+.form-success {
+  color: #fff;
+  font-size: 17px; }
+  @media (max-width: 767px) {
+    .form-success {
+      font-size: 14px; } }
+
 .footer {
   background-color: #272828;
   height: 100px;
@@ -1440,12 +1447,12 @@ body {
     .o-mnie-article {
       width: 100%;
       margin-left: 0px;
-      margin-top: 40px; } }
+      padding-top: 40px; } }
   @media (max-width: 767px) {
     .o-mnie-article {
       width: 100%;
       margin-left: 0px;
-      margin-top: 40px; } }
+      padding-top: 40px; } }
 
 .o-mnie__header {
   font-size: 23px;
