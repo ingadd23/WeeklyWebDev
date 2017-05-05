@@ -30,7 +30,9 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=latin-ext" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.min.css">
+	<!--build:css css/style.min.css-->
+	<link rel="stylesheet" href="css/style.css">
+	<!--endbuild-->
 
 </head>
 <body id="main" data-spy="scroll" data-target=".navbar" data-offset="90">
@@ -322,12 +324,12 @@
                     </div>
 
 
-                    <form action="" class="kontakt-container--right kontakt-form">
+                    <form method="post" action="mail.php" class="kontakt-container--right kontakt-form">
                         <input id="name" name="name" type="text" class="kontakt-form__input" placeholder="Imię i nazwisko" required="required">
                         <input id="email" name="email" type="email" class="kontakt-form__input" placeholder="E-mail" required="required">
                         <textarea id="message" name="message" class="kontakt-form__textarea" row="10" placeholder="Treść..." required="required"></textarea>
 
-                        <button class="kontakt-form__button">wyślij</button>
+                        <button id="submit" name="submit" type="submit" class="kontakt-form__button">wyślij</button>
                     </form>
 
 
@@ -355,7 +357,10 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
-	<script src="js/javascript.min.js"></script>
+	<!--build:js js/javascript.min.js -->
+	<script src="js/javascript.js"></script>
+	<script src="js/map.js"></script>
+	<!-- endbuild -->
 	
 </body>
 </html>
