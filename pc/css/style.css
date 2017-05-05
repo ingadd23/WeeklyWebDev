@@ -34,7 +34,7 @@
   display: none; }
 
 .container-fluid {
-  padding: 0px; }
+  padding: 0px !important; }
 
 a:hover, a:focus {
   text-decoration: none; }
@@ -514,8 +514,6 @@ template {
 body {
   background-color: #fff;
   font-family: 'Roboto', sans-serif;
-  width: 100%;
-  height: 100%;
   transition: all .5s ease;
   font-weight: 300;
   font-size: 15px;
@@ -532,10 +530,6 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 102;
   cursor: pointer; }
-
-.o_mnie {
-  height: 1000px;
-  width: 100%; }
 
 .gotop {
   position: fixed;
@@ -566,9 +560,6 @@ body {
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-
-@-ms-viewport {
-  width: auto !important; }
 
 .no-js #loader {
   display: none; }
@@ -920,12 +911,13 @@ body {
   font-weight: 500;
   color: #006539; }
 
-.navbar-container {
+#home {
   position: fixed;
   top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1000;
+  width: 100%;
+  z-index: 999; }
+
+.navbar-container {
   background-color: #fff;
   height: 150px;
   -webkit-transition: all 0.3s ease;
@@ -934,7 +926,8 @@ body {
   transition: all 0.3s ease; }
   @media (max-width: 767px) {
     .navbar-container {
-      height: 50px !important; } }
+      height: 50px !important;
+      border-bottom: 1px solid #e6e6e6; } }
 
 .navbar-container--top {
   height: 70px;
@@ -1502,7 +1495,10 @@ body {
     .paralax-container {
       height: 100vh;
       background-size: cover;
-      background-position: top left; } }
+      min-height: 600px;
+      background-position: top left;
+      display: flex;
+      margin: 0; } }
 
 .paralax__quote {
   position: absolute;

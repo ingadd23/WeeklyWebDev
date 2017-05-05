@@ -20,7 +20,10 @@
     @media (max-width: 767px) {
         height: 100vh;
         background-size: cover;
+        min-height: 600px;
         background-position: top left;
+        display: flex;
+        margin: 0;
     }
 }
 
