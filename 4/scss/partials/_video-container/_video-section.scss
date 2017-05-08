@@ -3,7 +3,7 @@
     background-color: $white;
     
     @media (min-width: $sm) and (max-width: $md-1){
-		flex-direction: column;
+        @include flexbox__column;
 	}
     
     @media (max-width: $sm-1) {

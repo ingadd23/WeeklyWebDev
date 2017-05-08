@@ -20,7 +20,7 @@
 	background-color: $submenu-color;
 	
 	.submenu-bar__category{
-		display: flex;
+        @include flexbox;
 	}
 }
 
@@ -47,13 +47,13 @@
 	background-color: $submenu-color;
 	
 	.submenu-bar__category{
-		display: flex;
+        @include flexbox;
 	}
 }
 
 
 .submenu-bar__category{
-	justify-content: center;
+    @include flexbox__justify--center;
 	padding: 27px;
 	transition: all .5s;
 	
@@ -70,10 +70,11 @@
 	}
     
     @media (max-width: $sm-1) {
-        justify-content: center;
+        @include flexbox__justify--center;
+        @include flexbox__aligin-items--center;
         padding: 9px;
         transition: all .5s;
-        align-items: center;
+        
 
         &:not(:last-child){
             border-bottom: 1px solid #49657e;
@@ -86,12 +87,12 @@
 }
 
 .submenu-bar-row{
-    justify-content: space-between;
 	margin-bottom: 4px;
 	text-decoration: none;
-	align-items: center;
 	margin-right: 0px;
 	transition: all .5s ease;
+    @include flexbox__justify--space-between;
+    @include flexbox__aligin-items--center;
 
 	&:hover{
 		.submenu-bar__icon{

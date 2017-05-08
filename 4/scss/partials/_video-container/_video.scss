@@ -6,6 +6,6 @@
     
     @media (max-width: $sm-1) {
 		max-width: 100%;
-        align-self: center;
+        @include flexbox__aligin-self--center;
 	}
 }

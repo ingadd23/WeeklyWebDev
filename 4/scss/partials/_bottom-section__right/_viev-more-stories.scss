@@ -5,7 +5,7 @@
     text-decoration: none;
     padding: 60px;
     box-sizing: border-box;
-    justify-content: space-between;
+    @include flexbox__justify--space-between;
     
     &:hover{
         .view-more-stories__icon{

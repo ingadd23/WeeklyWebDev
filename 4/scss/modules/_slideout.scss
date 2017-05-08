@@ -40,9 +40,9 @@ main#panel{
 	}
 
 	.slideout-open .slideout-menu {
-	 	display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        @include flexbox;
+        @include flexbox__column;
+        @include flexbox__justify--space-between;
 		overflow: hidden;
         background-color: $white;
 	}

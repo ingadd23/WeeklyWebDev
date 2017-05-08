@@ -1,15 +1,15 @@
 .photo-buttons{
     width: 33%;
     background-color: $submenu-color;
-    justify-content: center;
     margin-right: $block-margin;
-    align-items: center;
+    @include flexbox__justify--center;
+    @include flexbox__aligin-items--center;
     
     
     @media (max-width: $sm-1) {
-		flex-direction: row;
+        @include flexbox__row;
+       @include flexbox__justify--space-around;
         width: 100%;
-        justify-content: space-around;
         order: 2;
 	}
 }

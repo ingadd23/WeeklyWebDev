@@ -63,7 +63,7 @@
     padding-top: 25px;
     
     @media (max-width: $sm-1) {
-		flex-direction: column;
+        @include flexbox__column;
 	}
 }
 
