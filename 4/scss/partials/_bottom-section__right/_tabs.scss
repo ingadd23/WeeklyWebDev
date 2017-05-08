@@ -3,7 +3,7 @@
 }
 
 .tabs{
-    justify-content: space-between;
+    @include flexbox__justify--space-between;
 }
 
 .tab{
@@ -60,10 +60,10 @@
 
 
 .team-container{
-    justify-content: space-between;
+    @include flexbox__justify--space-between;
     
     @media (max-width: $sm-1) {
-		flex-direction: column;
+        @include flexbox__column;
 	}
 }
 
@@ -82,7 +82,7 @@
 }
 
 .member-name-section{
-    justify-content: space-between;
+    @include flexbox__justify--space-between;
     padding-left: 25px;
 }
 

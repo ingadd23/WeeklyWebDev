@@ -7,8 +7,8 @@
 }
 
 .twitter-section__names{
-    justify-content: space-between;
-    align-items: center;
+    @include flexbox__justify--space-between;
+    @include flexbox__aligin-items--center;
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 0px 30px;

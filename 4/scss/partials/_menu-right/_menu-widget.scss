@@ -35,8 +35,8 @@
 
 .widget-row{
 	padding: 19px;
-	align-items: center;
-    justify-content: space-between;
+    @include flexbox__aligin-items--center;
+    @include flexbox__justify--space-between;
 	
 	@media (min-width: $sm) and (max-width: $md-1){
 		padding: 15px;
@@ -58,7 +58,7 @@
 	font-size: 16px;
 	color: $white;
 	font-weight: 100;
-	align-items: center;
+    @include flexbox__aligin-items--center;
 	transition: all .5s ease;
 	
 		

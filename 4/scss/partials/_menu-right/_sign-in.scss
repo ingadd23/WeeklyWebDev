@@ -2,8 +2,8 @@
 	height: 25%;
 	background-color: $white;
 	margin-top: 15px;
-	align-items: center;
-	justify-content: space-around;
+    @include flexbox__aligin-items--center;
+    @include flexbox__justify--space-between;
 	
 	@media (max-width: $sm-1) {
 		//margin-top: 0px;

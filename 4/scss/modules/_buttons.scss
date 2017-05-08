@@ -1,7 +1,7 @@
 .nav-button {
-	align-content: center;
-	align-items: center;
-	justify-content: space-around;
+    @include flexbox__aligin-items--center;
+    @include flexbox__align-content--center;
+    @include flexbox__justify--space-around;
 	width: 60px;
 	min-width: 60px;
 	height: 60px;

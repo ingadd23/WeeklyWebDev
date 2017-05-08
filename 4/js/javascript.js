@@ -1,33 +1,70 @@
-var config = {
-    origin: 'bottom',
-    viewFactor : 0.15,
-    duration   : 800,
-    distance   : "20px",
-    scale      : 0.8,
-    reset: true,
-}
+$(window).on('load', function(){
+    $(".loader-container").fadeOut("slow");
+  
 
-window.sr = new ScrollReveal(config);
-sr.reveal('.header');
-sr.reveal('.menu-bar');
-sr.reveal('.social-menu');
-sr.reveal('.facebook-widget');
-sr.reveal('.twitter-widget');
-sr.reveal('.sign-in');
-sr.reveal('.newsletter');
-sr.reveal('.slider');
-sr.reveal('.video-container');
-sr.reveal('.photo-buttons');
-sr.reveal('.photo-section, .photo');
-sr.reveal('.twitter-section');
-sr.reveal('.calendar');
-sr.reveal('.view-more-stories');
-sr.reveal('.post-photo');
-sr.reveal('.news');
-sr.reveal('.post-section');
-sr.reveal('.quote-section');
-sr.reveal('.mail');
-sr.reveal('.tab-container');
+    var config = {
+        origin: 'bottom',
+        viewFactor : 0.15,
+        duration   : 800,
+        distance   : "20px",
+        scale      : 0.8,
+        reset: true,
+    }
+
+    window.sr = new ScrollReveal(config);
+    sr.reveal('.header');
+    sr.reveal('.menu-bar');
+    sr.reveal('.social-menu');
+    sr.reveal('.facebook-widget');
+    sr.reveal('.twitter-widget');
+    sr.reveal('.sign-in');
+    sr.reveal('.newsletter');
+    sr.reveal('.slider');
+    sr.reveal('.video-container');
+    sr.reveal('.photo-buttons');
+    sr.reveal('.photo-section, .photo');
+    sr.reveal('.twitter-section');
+    sr.reveal('.calendar');
+    sr.reveal('.view-more-stories');
+    sr.reveal('.post-photo');
+    sr.reveal('.news');
+    sr.reveal('.post-section');
+    sr.reveal('.quote-section');
+    sr.reveal('.mail');
+    sr.reveal('.tab-container');
+
+    var idFb = document.getElementById("widget__number--facebook");   
+    var numberWidgetFb = 0;
+    
+    var idIntervalFb = setInterval(frame, 10);
+
+    function frame() {
+        if (numberWidgetFb >= 156) {
+            clearInterval(idIntervalFb);
+        } else {
+            numberWidgetFb++;
+     
+            idFb.innerHTML = numberWidgetFb * 1 + 'K';
+        }
+    }
+    
+    
+    var idTwitter = document.getElementById("widget__number--twitter");    
+    var numberWidgetTw = 0;
+    
+    var idIntervalTw = setInterval(frame1, 20);
+
+    function frame1() {
+        if (numberWidgetTw >= 89) {
+            clearInterval(idIntervalTw);
+        } else {
+            numberWidgetTw++;
+     
+            idTwitter.innerHTML = numberWidgetTw * 1 + 'K';
+        }
+    }
+});
+
 
 
 $(".nav-list__ul").clone().appendTo("#slide-nav");
@@ -97,61 +134,6 @@ $('.search-button').click(function(){
 });
 
 
-$(window).on('load', function(){
-    
-    /*
-    var numberFb = 156;
-    var numberTwitter = 89;
-
-    var idFb = document.getElementById("widget__number--facebook");   
-    var idTwitter = document.getElementById("widget__number--twitter");  
-
-    var numberWidget = 0;
-
-    function frame(nr,elem, inter) {
-        if (numberWidget >= nr) {
-          clearInterval(inter);
-        } else {
-          numberWidget++; 
-
-         elem.innerHTML = numberWidget  + 'K';
-        }
-    };
-    var interval1 = setInterval(function(){ frame(numberTwitter, idTwitter, interval1); }, 15);
-    var interval = setInterval(function(){ frame(numberFb, idFb, interval); }, 10);
-*/
-
-    var idFb = document.getElementById("widget__number--facebook");   
-    var numberWidgetFb = 0;
-    
-    var idIntervalFb = setInterval(frame, 10);
-
-    function frame() {
-        if (numberWidgetFb >= 156) {
-            clearInterval(idIntervalFb);
-        } else {
-            numberWidgetFb++;
-     
-            idFb.innerHTML = numberWidgetFb * 1 + 'K';
-        }
-    }
-    
-    
-    var idTwitter = document.getElementById("widget__number--twitter");    
-    var numberWidgetTw = 0;
-    
-    var idIntervalTw = setInterval(frame1, 20);
-
-    function frame1() {
-        if (numberWidgetTw >= 89) {
-            clearInterval(idIntervalTw);
-        } else {
-            numberWidgetTw++;
-     
-            idTwitter.innerHTML = numberWidgetTw * 1 + 'K';
-        }
-    }
-});
 
 
  $('.widget__follow').click(function() { 

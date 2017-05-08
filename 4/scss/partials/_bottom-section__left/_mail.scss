@@ -2,7 +2,7 @@
     margin-top: $block-margin;
     background-color: $white;
     height: 28%;
-    justify-content: center;
+    @include flexbox__justify--center;
     
     @media (max-width: $sm-1) {
 		height: auto;
