@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+    <head> 
+        <title>BestMovie</title> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="zadanie 3 weekly webdev">
+        <meta name="keywords" content="">
+
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="js/javascript1.js"></script>
+        <script src="js/javascript.js"></script>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <nav class="nav">
+                    <a href="http://localhost:8080"><img src="images/logo.png" alt="bestmovie"></a>
+                    <button id="menu-button" type="button" class="menu-button visible-sm" data-target="#menu">
+                        <span class="menu-button__span"></span>
+                        <span class="menu-button__span"></span>
+                        <span class="menu-button__span"></span>
+                        <span class="menu-button__span"></span>
+                    </button>
+
+                    <ul id="menu" class="menu">
+                        <li class="menu__li"><a class="menu__a menu__a-log" href="/panelLogowania">zaloguj się</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="registry" class="registry">
+            <div class="container registry-container">
+                <h2 class="title">zarejestruj się</h2>
+                <p class="subtitle subtitle--margin">Dołącz do grona kinomaniaków</p>
+
+                <form id="zarejestrujUzytkownika" action="/dodajUzytkownika" class="registry__form" >
+                    <p class="registry__form-p subtitle">imię</p>
+                    <input type="text" id="imie" name="imie" required="required"/>
+                    <p class="registry__form-p subtitle">nazwisko</p>
+                    <input type="text" id="nazwisko" name="nazwisko" required="required"/>
+                    <p class="registry__form-p subtitle">login</p>
+                    <input type="text" id="login" name="login" required="required"/>
+                    <p class="registry__form-p subtitle">hasło</p>
+                    <input type="password" id="haslo" name="haslo" required="required"/>
+                    <p class="registry__form-p subtitle">powtórz hasło</p>
+                    <input type="password" id="haslo1" name="haslo1" required="required" onchange="sprawdz()"/>
+                    <p class="registry__form-p subtitle">email</p>
+                    <input type="email" id="email" name="email" required="required"/>
+                    <p id="blad"></p>
+                    <button type="submit" class="registry__form-button">zarejesrtuj</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="logos" class="logos">
+            <div class="container logos-container">
+                <img src="images/4_icon_envato.png" class="logos-img" alt="envato">
+                <img src="images/4_icon_wordpress.png" class="logos-img" alt="wordpress">
+                <img src="images/4_icon_ae_tuts.png" class="logos-img" alt="ae_tuts">
+                <img src="images/4_icon_microlancer.png" class="logos-img" alt="microlancer">
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container footer-container">
+
+                <div class="footer-row footer-row__social">
+                    <a href="#" class="social-link social-link--twitter">
+                        <img src="images/6_icon_twitter.png" class="social-icon" alt="tweeter">
+                    </a>
+
+                    <a href="#" class="social-link social-link--facebook">
+                        <img src="images/6_icon_facebook.png" class="social-icon" alt="facebook">
+                    </a>
+
+                    <a href="#" class="social-link social-link--pinterest">
+                        <img src="images/6_icon_pinterest.png" class="social-icon" alt="pinterest">
+                    </a>
+
+                    <a href="#" class="social-link social-link--google">
+                        <img src="images/6_icon_google.png" class="social-icon" alt="google">
+                    </a>
+                </div>
+
+                <div class="footer-row footer-row__copy">
+                    <p>©Copyright 2018 Inga Dedio</p>
+                </div>
+
+                <div class="footer-row"></div>
+
+            </div>
+        </footer>
+    </body>
+</html>

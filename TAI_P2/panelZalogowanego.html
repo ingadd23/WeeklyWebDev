@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+    <title>BestMovie</title> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="zadanie 3 weekly webdev">
+        <meta name="keywords" content="">
+
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="js/javascript1.js"></script>
+        <script src="js/javascript.js"></script>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="getUzytkownik(); getUlubione()">
+     <header class="header">
+            <div class="container">
+                <nav class="nav">
+                    <a href="#helo"><img src="images/logo.png" alt="treehouse"></a>
+                    <button id="menu-button" type="button" class="menu-button visible-sm" data-target="#menu">
+                        <span class="menu-button__span"></span>
+                        <span class="menu-button__span"></span>
+                        <span class="menu-button__span"></span>
+                        <span class="menu-button__span"></span>
+                    </button>
+
+                    <ul id="menu" class="menu">
+                        <li class="menu__li"><a class="menu__a" href="#premiery">premiery</a></li>
+                        <li class="menu__li"><a class="menu__a" href="#best">popularne</a></li>
+                        <li class="menu__li"><a class="menu__a" href="#ulubione">ulubione</a></li>
+                        <li class="menu__li"><a class="menu__a menu__a-log" href="/wylogujSie">wyloguj się</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="helo" class="helo">
+            <div class="container">
+                <h2 class="title helo__title">witaj <p id="login"></p></h2>
+                <p class="subtitle subtitle--margin helo__subtitle">Stwórz własną bazę ulubionych filmów </p>
+            </div>
+        </section>
+
+        <section id="premiery" class="premiery">
+            <div class="container">
+                <h2 class="title">premiery</h2>
+                <p class="subtitle subtitle--margin">Już niedługo w kinach </p>
+
+                <div class="premiery-row">
+                    <a href="/panelFilmu?id=4" class="premiery__href">
+                        <figure class="premiery-column premiery-column--1">
+                            <img src="images/nowe1.jpg" alt="responsive web">
+                            <figcaption class="title premiery-column__title">
+                                czarna pantera
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="/panelFilmu?id=2" class="premiery__href">
+                        <figure class="premiery-column premiery-column--1">
+                            <img src="images/nowe2.jpg" alt="responsive web">
+                            <figcaption class="title premiery-column__title">
+                                tomb rider
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="/panelFilmu?id=1" class="premiery__href">
+                        <figure class="premiery-column premiery-column--1">
+                            <img src="images/nowe3.jpg" alt="responsive web">
+                            <figcaption class="title premiery-column__title">
+                                avengers <br/> wojna bez granic
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="/panelFilmu?id=5" class="premiery__href">
+                        <figure class="premiery-column premiery-column--1">
+                            <img src="images/nowe4.jpg" alt="responsive web">
+                            <figcaption class="title premiery-column__title">
+                                futrzaki<br/>ruszają<br/> na ratunek
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="/panelFilmu?id=3" class="premiery__href">
+                        <figure class="premiery-column premiery-column--1">
+                            <img src="images/nowe5.jpg" alt="responsive web">
+                            <figcaption class="title premiery-column__title">
+                                deadpool 2
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="best" class="best">
+            <div class="container">
+                <h2 class="title">najpopularniejsze</h2>
+                <p class="subtitle subtitle--margin">Najlepiej oceniane filmy </p>
+
+                <div class="best-row">
+
+                    <a href="/panelFilmu?id=1" class="best__href">
+                        <figure class="best-column best-column--1">
+                            <img src="images/nowe3.jpg" alt="responsive web">
+                            <figcaption class="title best-column__title">
+                                avengers <br/> wojna bez granic
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="/panelFilmu?id=3" class="best__href">
+                        <figure class="best-column best-column--1">
+                            <img src="images/nowe5.jpg" alt="responsive web">
+                            <figcaption class="title best-column__title">
+                                deadpool 2
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="/panelFilmu?id=4" class="best__href">
+                        <figure class="best-column best-column--1">
+                            <img src="images/nowe1.jpg" alt="responsive web">
+                            <figcaption class="title best-column__title">
+                                czarna pantera
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="/panelFilmu?id=6" class="best__href">
+                        <figure class="best-column best-column--1">
+                            <img src="images/nowe7.jpg" alt="responsive web">
+                            <figcaption class="title best-column__title">
+                                wyszczekani
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="/panelFilmu?id=7" class="best__href">
+                        <figure class="best-column best-column--1">
+                            <img src="images/nowe8.jpg" alt="responsive web">
+                            <figcaption class="title best-column__title">
+                                ella i john
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+    
+    
+        <section id="ulubione" class="ulubione">
+            <div class="container">
+                <h2 class="title">ulubione</h2>
+                <p class="subtitle subtitle--margin">Twoje ulubione filmy </p>
+
+                <div id="ulubione-column" class="ulubione-column">
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-form" class="contact-form">
+            <div class="container">
+                <h2 class="title contact-form__title">koniec na dzisiaj?</h2>
+                <a href="/wylogujSie" class="button-2">wyloguj się</a>
+            </div>
+        </section>
+
+        <section id="logos" class="logos">
+            <div class="container logos-container">
+                <img src="images/4_icon_envato.png" class="logos-img" alt="envato">
+                <img src="images/4_icon_wordpress.png" class="logos-img" alt="wordpress">
+                <img src="images/4_icon_ae_tuts.png" class="logos-img" alt="ae_tuts">
+                <img src="images/4_icon_microlancer.png" class="logos-img" alt="microlancer">
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container footer-container">
+
+                <div class="footer-row footer-row__social">
+                    <a href="#" class="social-link social-link--twitter">
+                        <img src="images/6_icon_twitter.png" class="social-icon" alt="tweeter">
+                    </a>
+
+                    <a href="#" class="social-link social-link--facebook">
+                        <img src="images/6_icon_facebook.png" class="social-icon" alt="facebook">
+                    </a>
+
+                    <a href="#" class="social-link social-link--pinterest">
+                        <img src="images/6_icon_pinterest.png" class="social-icon" alt="pinterest">
+                    </a>
+
+                    <a href="#" class="social-link social-link--google">
+                        <img src="images/6_icon_google.png" class="social-icon" alt="google">
+                    </a>
+                </div>
+
+                <div class="footer-row footer-row__copy">
+                    <p>©Copyright 2018 Inga Dedio</p>
+                </div>
+
+                <div class="footer-row"></div>
+
+            </div>
+        </footer>
+</body>
+</html>
