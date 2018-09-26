@@ -1,0 +1,221 @@
+.header{
+    width: 100%;
+    background: #fff;
+    //position: fixed;
+    //top: 0;
+}
+
+.header--up{
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    
+    @media (max-width: $xs-1){
+        height: auto;
+    }
+}
+
+.header--up__container {
+    height: 100%;
+    @include flexbox;
+    @include flexbox__row;
+    @include flexbox__justify--space-between;
+    
+    @media (max-width: $xs-1){
+        display: block;
+    }
+    
+    a{
+        img{
+            display: block;
+            height: 100%;
+            padding: 20px 0;
+            box-sizing: border-box;
+            @include flexbox__aligin-self--center;
+            
+            @media (max-width: $xs-1){
+                display: block;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+    
+    h2{
+        font-family: "dDin";
+        font-weight: 100;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        @include flexbox__aligin-self--flex-end;
+        
+        span{
+            color: #0f435d;
+        }
+        
+        @media (max-width: $sm-1){
+            font-size: 19px;
+        }
+        
+        @media (max-width: $xs-1){
+            display: none;
+        }
+        
+    }
+}
+
+.header--down{
+    position: relative;
+    width: 100%;
+    background: #0f435d;
+    box-shadow: 0px 4px 10px #165979;
+}
+
+.nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @include flexbox;
+    @include flexbox__row;
+    @include flexbox__justify--space-between;
+    
+    @media (max-width: $sm-1){
+        @include flexbox__column;
+    }
+    
+    li{
+        position: relative;
+        
+        &:first-child{
+            a{
+                padding-left: 0;
+            }
+        }
+        
+        &:last-child{
+            a{ 
+                padding-right: 0;
+            }
+        }
+        
+        &:not(:last-child){
+
+            &::after{
+                content: "";
+                display: block;
+                height: 100%;
+                width: 1px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: #fff;
+                
+                @media (max-width: $sm-1){
+                    height: 1px;
+                    width: 70%;
+                    top: auto;
+                    bottom: 0;
+                    right: 15%;
+                    background-color: #19668c;
+                }
+            }
+        }
+
+        a{
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            font-weight: lighter;
+            font-size: 14px;
+            padding: 15px 24px;
+            text-align: center;
+            @include transition(all, .5s, ease);
+   
+            @media (min-width: $md) and (max-width: $lg-1){
+                font-size: 13px;
+                padding: 15px 14px;
+            }
+            
+            @media (max-width: $sm-1){
+                font-size: 13px;
+            }
+            
+            &:hover{
+                background: #145676;
+                @include transition(all, .5s, ease);
+            }
+        }
+    }
+    
+}
+
+
+.nav__button__container--visibility {
+    
+    display: none;
+    
+    @media (max-width: $sm-1){
+        display: block;
+        
+    }
+}
+
+.nav__button__container{
+    height: 50px;
+    @include flexbox;
+    @include flexbox__row;
+    @include flexbox__justify--space-between;
+    
+    span{
+        color: #fff;
+        font-family: "dDin";
+        text-transform: uppercase;
+        @include flexbox__aligin-self--center;
+    }
+    
+    .nav__button {
+        cursor: pointer;
+        @include flexbox;
+        @include flexbox__column;
+        @include flexbox__aligin-self--center;
+    }
+}
+
+
+.nav__container{
+    
+    @media (max-width: $sm-1){
+        max-height: 1px;
+        overflow: hidden;
+        @include transition(all, .5s, ease);
+    }
+}
+
+.nav__container--visible{
+    display: block;
+    max-height: 350px;
+    @include transition(all, .5s, ease);
+}
+
+.bar1, .bar2, .bar3 {
+    width: 36px;
+    height: 2px;
+    background-color: #fff;
+    margin: 5px 0;
+    border-radius: 10px;
+    border-radius: 50px;
+    transition: all .5s ease 0s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}

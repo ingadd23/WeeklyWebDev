@@ -1,0 +1,1170 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'dDin';
+  src: url("../fonts/D-DIN.otf"), url("../fonts/D-DIN.woff"), url("../fonts/din.eot"); }
+
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot?56850985");
+  src: url("../fonts/fontello.eot?56850985#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?56850985") format("woff2"), url("../fonts/fontello.woff?56850985") format("woff"), url("../fonts/fontello.ttf?56850985") format("truetype"), url("../fonts/fontello.svg?56850985#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?56850985#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-check:before {
+  content: '\e800'; }
+
+/* '' */
+.icon-cancel:before {
+  content: '\e801'; }
+
+/* '' */
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+.container {
+  width: 1140px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 15px; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+      width: 960px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .container {
+      min-width: 720px;
+      width: auto; } }
+  @media (max-width: 767px) {
+    .container {
+      width: auto; } }
+
+.get-info-button {
+  position: fixed;
+  z-index: 100;
+  display: block;
+  bottom: 50px;
+  right: -173px;
+  background: red;
+  padding: 20px 20px 20px 20px;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-family: "dDin";
+  font-weight: 600;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.get-info-button--visible {
+  right: 0px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.modal {
+  background-color: #0f435d;
+  border-radius: 10px;
+  display: none;
+  max-height: calc(100% - 100px);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  z-index: 990; }
+  .modal.modal-is-visible {
+    display: block;
+    z-index: 1010; }
+  @media (max-width: 767px) {
+    .modal {
+      width: 90%; } }
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 980; }
+  .modal-overlay.modal-is-visible {
+    display: block;
+    z-index: 1009; }
+
+.modal-close {
+  color: #fff;
+  text-align: right;
+  cursor: pointer;
+  font-size: 28px;
+  transition: all .5s ease 0s; }
+  .modal-close:hover {
+    color: red; }
+
+.header {
+  width: 100%;
+  background: #fff; }
+
+.header--up {
+  width: 100%;
+  height: 80px;
+  background: #fff; }
+  @media (max-width: 576px) {
+    .header--up {
+      height: auto; } }
+
+.header--up__container {
+  height: 100%;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (doesn't work very well) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  @media (max-width: 576px) {
+    .header--up__container {
+      display: block; } }
+  .header--up__container a img {
+    display: block;
+    height: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center; }
+    @media (max-width: 576px) {
+      .header--up__container a img {
+        display: block;
+        max-width: 100%;
+        height: auto; } }
+  .header--up__container h2 {
+    font-family: "dDin";
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: flex-end;
+    align-self: flex-end; }
+    .header--up__container h2 span {
+      color: #0f435d; }
+    @media (max-width: 767px) {
+      .header--up__container h2 {
+        font-size: 19px; } }
+    @media (max-width: 576px) {
+      .header--up__container h2 {
+        display: none; } }
+
+.header--down {
+  position: relative;
+  width: 100%;
+  background: #0f435d;
+  box-shadow: 0px 4px 10px #165979; }
+
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (doesn't work very well) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  @media (max-width: 767px) {
+    .nav {
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-box-direction: normal;
+      -moz-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+  .nav li {
+    position: relative; }
+    .nav li:first-child a {
+      padding-left: 0; }
+    .nav li:last-child a {
+      padding-right: 0; }
+    .nav li:not(:last-child)::after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 1px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #fff; }
+      @media (max-width: 767px) {
+        .nav li:not(:last-child)::after {
+          height: 1px;
+          width: 70%;
+          top: auto;
+          bottom: 0;
+          right: 15%;
+          background-color: #19668c; } }
+    .nav li a {
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      font-weight: lighter;
+      font-size: 14px;
+      padding: 15px 24px;
+      text-align: center;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .nav li a {
+          font-size: 13px;
+          padding: 15px 14px; } }
+      @media (max-width: 767px) {
+        .nav li a {
+          font-size: 13px; } }
+      .nav li a:hover {
+        background: #145676;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+
+.nav__button__container--visibility {
+  display: none; }
+  @media (max-width: 767px) {
+    .nav__button__container--visibility {
+      display: block; } }
+
+.nav__button__container {
+  height: 50px;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (doesn't work very well) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .nav__button__container span {
+    color: #fff;
+    font-family: "dDin";
+    text-transform: uppercase;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center; }
+  .nav__button__container .nav__button {
+    cursor: pointer;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (doesn't work very well) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center; }
+
+@media (max-width: 767px) {
+  .nav__container {
+    max-height: 1px;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; } }
+
+.nav__container--visible {
+  display: block;
+  max-height: 350px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.bar1, .bar2, .bar3 {
+  width: 36px;
+  height: 2px;
+  background-color: #fff;
+  margin: 5px 0;
+  border-radius: 10px;
+  border-radius: 50px;
+  transition: all .5s ease 0s; }
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px); }
+
+.change .bar2 {
+  opacity: 0; }
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px); }
+
+.section-1 {
+  width: 100%;
+  background-image: url(../img/image-1.png);
+  background-attachment: fixed;
+  background-clip: border-box;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.section-1__container {
+  width: 100%; }
+  .section-1__container h1 {
+    font-family: "dDin";
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-weight: 100;
+    font-size: 40px;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+
+.section-2__container {
+  margin-top: 30px;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (doesn't work very well) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  @media (max-width: 991px) {
+    .section-2__container {
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-box-direction: normal;
+      -moz-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+
+.section-2--left {
+  width: 70%;
+  padding-right: 30px;
+  margin-bottom: 20px; }
+  .section-2--left img {
+    display: block;
+    max-width: 100%;
+    height: auto; }
+  .section-2--left p {
+    text-align: justify;
+    font-size: 17px;
+    line-height: 23px; }
+    @media (max-width: 767px) {
+      .section-2--left p {
+        font-size: 16px; } }
+  .section-2--left h3 {
+    font-family: "dDin";
+    font-size: 21px;
+    color: #1c77a3;
+    position: relative; }
+    .section-2--left h3::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      background: #1c77a3; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .section-2--left {
+      width: 65%; } }
+  @media (max-width: 991px) {
+    .section-2--left {
+      width: 100%;
+      padding-right: 0px; } }
+
+.section-2--right {
+  width: 30%;
+  height: 100%;
+  background: #0f435d; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .section-2--right {
+      width: 35%; } }
+  @media (max-width: 991px) {
+    .section-2--right {
+      width: 100%;
+      margin-top: 20px; } }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  box-sizing: border-box; }
+  .form h3 {
+    color: #fff;
+    font-family: "dDin";
+    font-weight: 100;
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 25px; }
+  .form .form--p {
+    color: #fff;
+    font-size: 12px;
+    text-align: center; }
+  .form button {
+    background: red;
+    height: 35px;
+    border-radius: 4px;
+    border: none;
+    font-family: "dDin";
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 15px 0 23px 0;
+    cursor: pointer;
+    transition: all .5s ease 0s; }
+    .form button:hover {
+      background: #fff;
+      color: #0f435d; }
+
+.form__container {
+  margin-bottom: 22px;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (doesn't work very well) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .form__container label {
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 14px; }
+
+.input__container {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (doesn't work very well) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .input__container input, .input__container select {
+    height: 35px;
+    width: 100%;
+    border: none;
+    margin: none;
+    padding: 0 0 0 10px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    box-sizing: border-box; }
+  .input__container .validation-img {
+    height: 35px;
+    width: 35px;
+    background: #fff;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    text-align: center;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (doesn't work very well) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .input__container .icon-check {
+    color: #1c77a3; }
+  .input__container .icon-cancel {
+    color: #b72424;
+    font-size: 17px;
+    background: #f9d3d3; }
+  .input__container .red {
+    background: #f9d3d3; }
+
+.section-3 {
+  background-image: url(../img/image-1.png);
+  background-attachment: fixed;
+  background-clip: border-box;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  @media (max-width: 991px) {
+    .section-3 {
+      margin: 40px 15px 0 15px; } }
+  .section-3 .container {
+    padding: 40px 15px; }
+  .section-3 p {
+    color: #fff;
+    text-align: center; }
+
+.footer {
+  background: #0f435d;
+  padding: 20px 0; }
+  @media (max-width: 991px) {
+    .footer {
+      margin: 0 15px 0 15px; } }
+  .footer .container {
+    padding: 0px 15px; }
+  .footer p {
+    color: #fff;
+    text-align: center; }
+
+.thankyou__container {
+  padding: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (doesn't work very well) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.thankyou--1 {
+  font-family: "dDin";
+  color: #fff;
+  text-align: center;
+  font-size: 26px;
+  margin-top: 40px;
+  margin-bottom: 25px; }
+
+.thankyou--2 {
+  font-family: "dDin";
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+  font-size: 23px;
+  margin-bottom: 25px; }
+
+.thankyou__circle {
+  background: white;
+  align-self: center;
+  display: block;
+  border-radius: 100px;
+  margin-top: 50px;
+  margin-bottom: 55px;
+  -webkit-animation: bubble-anim 2s ease-out infinite;
+  animation: bubble-anim 2s ease-out infinite; }
+  .thankyou__circle .icon-check {
+    font-size: 130px;
+    min-height: 182px;
+    color: #0f435d;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (doesn't work very well) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+
+@-webkit-keyframes bubble-anim {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  20% {
+    -webkit-transform: scaleY(0.95) scaleX(1.05);
+    transform: scaleY(0.95) scaleX(1.05); }
+  48% {
+    -webkit-transform: scaleY(1.1) scaleX(0.9);
+    transform: scaleY(1.1) scaleX(0.9); }
+  68% {
+    -webkit-transform: scaleY(0.98) scaleX(1.02);
+    transform: scaleY(0.98) scaleX(1.02); }
+  80% {
+    -webkit-transform: scaleY(1.02) scaleX(0.98);
+    transform: scaleY(1.02) scaleX(0.98); }
+  97%,
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes bubble-anim {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  20% {
+    -webkit-transform: scaleY(0.95) scaleX(1.05);
+    transform: scaleY(0.95) scaleX(1.05); }
+  48% {
+    -webkit-transform: scaleY(1.1) scaleX(0.9);
+    transform: scaleY(1.1) scaleX(0.9); }
+  68% {
+    -webkit-transform: scaleY(0.98) scaleX(1.02);
+    transform: scaleY(0.98) scaleX(1.02); }
+  80% {
+    -webkit-transform: scaleY(1.02) scaleX(0.98);
+    transform: scaleY(1.02) scaleX(0.98); }
+  97%,
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }

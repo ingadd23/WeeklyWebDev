@@ -1,0 +1,29 @@
+.section-1{
+    width: 100%;
+    background-image: url(../img/image-1.png);
+    background-attachment: fixed;
+    background-clip: border-box;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section-1__container {
+    
+    width: 100%;
+    
+    h1{
+        font-family: "dDin";
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        font-weight: 100;
+        font-size: 40px;
+        margin: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
